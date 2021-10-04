@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Фильтр, формы с вопросом, авториз. шапка и прочие блоки</title>
+  <link rel="stylesheet" href="../assets/styles/main.css">
+  <!-- Disable tap highlight on IE -->
+  <meta name="msapplication-tap-highlight" content="no">
+  <!-- for Chrome on Android -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="application-name" lang="en" content="Фильтр, формы с вопросом, авториз. шапка и прочие блоки">
+  <link rel="icon" sizes="192x192" href="../assets/img/favicons/android-chrome-192x192.png">
+  <!-- for Safari on iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Фильтр, формы с вопросом, авториз. шапка и прочие блоки">
+  <meta name="theme-color" content="#FFFFFF">
+  <link rel="shortcut icon" href="../assets/img/favicons/favicon.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicons/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicons/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="57x57" href="../assets/img/favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="../assets/img/favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="../assets/img/favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="../assets/img/favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="../assets/img/favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="../assets/img/favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="../assets/img/favicons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="167x167" href="../assets/img/favicons/apple-touch-icon-167x167.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/favicons/apple-touch-icon-180x180.png">
+  <link rel="apple-touch-icon" sizes="1024x1024" href="../assets/img/favicons/apple-touch-icon-1024x1024.png">
+</head>
+
+<body>
+  <div class="main-wrapper">
+    <header class="head ">
+      <div class="main-wrapp head__wrapp">
+        <div class="head__wrapp">
+          <a href="/" class="logo head__logo">
+            <svg class=>
+              <use href="../assets/img/svg-sprite/sprite.svg#logo"></use>
+            </svg>
+            <span>SITENAME</span>
+          </a>
+          <button type="button" class="head__burger btn btn--border btn--black btn--icon">
+            <svg class=>
+              <use href="../assets/img/svg-sprite/sprite.svg#burger"></use>
+            </svg>
+          </button>
+          <button type="button" class="head__close btn btn--close">
+            <svg class=>
+              <use href="../assets/img/svg-sprite/sprite.svg#close-icon"></use>
+            </svg>
+          </button>
+        </div>
+        <nav class="head__menu">
+          <a href="../pages/catalog.html" class="btn btn--clear">Каталог</a>
+          <a href="../pages/about.html" class="btn btn--clear">О нас</a>
+          <a href="../pages/contacts.html" class="btn btn--clear">Контакты</a>
+          <a href="../pages/magazine.html" class="btn btn--black btn--border">Журнал</a>
+          <a href="#login" class="head__login btn btn--icon btn--clear btn--hover-red">
+            <svg class=>
+              <use href="../assets/img/svg-sprite/sprite.svg#lock-icon"></use>
+            </svg>
+            <span>Войти</span>
+          </a>
+        </nav>
+      </div>
+    </header>
+    <div class="content">
+      <div class="main-wrapp bgc-60" style="padding-top: 20px; padding-bottom: 20px;">
+        <h4>Фильтр</h4>
+        <div class="b-filter ">
+          <div class="b-filter-tabs">
+            <button class="is-active">Все</button>
+            <button>Спорт</button>
+            <button>Ивенты</button>
+            <button>Музыка</button>
+          </div>
+          <div class="b-filter-close-btn">
+            <button class="btn btn--close btn--black">
+              <svg class=>
+                <use href="../assets/img/svg-sprite/sprite.svg#close-icon"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="b-filter__wrapp">
+            <div class="b-filter__title">Фильтры</div>
+            <div class="b-filter-inputs">
+              <div class="select ">
+                <input type="hidden" name="select-name" value="">
+                <div class="select__value">
+                  <span>Город</span>
+                  <svg class=>
+                    <use href="../assets/img/svg-sprite/sprite.svg#select-triangle"></use>
+                  </svg>
+                </div>
+                <div class="select__list">
+                  <ul>
+                    <li data-val=Москва>Москва</li>
+                    <li data-val=Питер>Питер</li>
+                    <li data-val=Новгород>Новгород</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="select ">
+                <input type="hidden" name="select-name" value="">
+                <div class="select__value">
+                  <span>Тип значения</span>
+                  <svg class=>
+                    <use href="../assets/img/svg-sprite/sprite.svg#select-triangle"></use>
+                  </svg>
+                </div>
+                <div class="select__list">
+                  <ul>
+                    <li data-val=Спорт>Спорт</li>
+                    <li data-val=Ивенты>Ивенты</li>
+                    <li data-val=Музыка>Музыка</li>
+                    <li data-val=Офисы Офисы>Офисы Офисы</li>
+                  </ul>
+                </div>
+              </div>
+              <input type="text" placeholder="Адрес">
+              <div class="select ">
+                <input type="hidden" name="select-name" value="">
+                <div class="select__value">
+                  <span>Город 2</span>
+                  <svg class=>
+                    <use href="../assets/img/svg-sprite/sprite.svg#select-triangle"></use>
+                  </svg>
+                </div>
+                <div class="select__list">
+                  <ul>
+                    <li data-val=Спорт>Спорт</li>
+                    <li data-val=Ивенты>Ивенты</li>
+                    <li data-val=Музыка>Музыка</li>
+                    <li data-val=Офисы Офисы>Офисы Офисы</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="select ">
+                <input type="hidden" name="select-name" value="">
+                <div class="select__value">
+                  <span>Парковка</span>
+                  <svg class=>
+                    <use href="../assets/img/svg-sprite/sprite.svg#select-triangle"></use>
+                  </svg>
+                </div>
+                <div class="select__list">
+                  <ul>
+                    <li data-val=Спорт>Спорт</li>
+                    <li data-val=Ивенты>Ивенты</li>
+                    <li data-val=Музыка>Музыка</li>
+                    <li data-val=Офисы Офисы>Офисы Офисы</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="select select--price">
+                <input type="hidden" name="select-name" value="">
+                <div class="select__value">
+                  <span>Цена</span>
+                  <svg class=>
+                    <use href="../assets/img/svg-sprite/sprite.svg#select-triangle"></use>
+                  </svg>
+                </div>
+                <div class="select__list">
+                  <div class="select__price-input">
+                    <input type="number" placeholder="от" min="1" max="999999" onkeydown="javascript: return event.keyCode === 8 || event.keyCode === 46 ? true : !isNaN(Number(event.key))">
+                    <input type="number" placeholder="до" min="1" max="999999" onkeydown="javascript: return event.keyCode === 8 || event.keyCode === 46 ? true : !isNaN(Number(event.key))">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="b-filter-btns">
+              <button class="btn btn--100">Сбросить фильтры</button>
+              <button class="btn btn--primary">Найти</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-wrapp bgc-60" style="padding-top: 20px; padding-bottom: 20px;">
+        <h4>Фильтр на главной</h4>
+        <div class="b-filter b-filter--main">
+          <div class="b-filter-tabs">
+            <button class="is-active">Все</button>
+            <button>Спорт</button>
+            <button>Ивенты</button>
+            <button>Музыка</button>
+          </div>
+          <div class="b-filter__wrapp">
+            <div class="b-filter-inputs">
+              <div class="select b-filter--main">
+                <input type="hidden" name="select-name" value="">
+                <div class="select__value">
+                  <span>Город</span>
+                  <svg class=>
+                    <use href="../assets/img/svg-sprite/sprite.svg#select-triangle"></use>
+                  </svg>
+                </div>
+                <div class="select__list">
+                  <ul>
+                    <li data-val=Москва>Москва</li>
+                    <li data-val=Питер>Питер</li>
+                    <li data-val=Новгород>Новгород</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="select b-filter--main">
+                <input type="hidden" name="select-name" value="">
+                <div class="select__value">
+                  <span>Тип значения</span>
+                  <svg class=>
+                    <use href="../assets/img/svg-sprite/sprite.svg#select-triangle"></use>
+                  </svg>
+                </div>
+                <div class="select__list">
+                  <ul>
+                    <li data-val=Спорт>Спорт</li>
+                    <li data-val=Ивенты>Ивенты</li>
+                    <li data-val=Музыка>Музыка</li>
+                    <li data-val=Офисы Офисы>Офисы Офисы</li>
+                  </ul>
+                </div>
+              </div>
+              <input type="text" placeholder="Адрес">
+            </div>
+            <div class="b-filter-btns">
+              <button class="btn btn--100">Сбросить фильтры</button>
+              <button class="btn btn--primary">Найти</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="margin: 20px 0;">
+        <div class="b-feedback ">
+          <div class="b-feedback__fon">
+            <img srcset="
+            ../assets/img/main/bg-feedback.jpg 1200w,
+            ../assets/img/main/bg-feedback-900.jpg 900w,
+            ../assets/img/main/bg-feedback-600.jpg 600w,
+          " src="../assets/img/main/bg-feedback.jpg" alt="feedback">
+          </div>
+          <div class="b-feedback__wrapp main-wrapp">
+            <h2>Остались вопросы?</h2>
+            <p>Напишите нам и мы ответим на ваш вопрос</p>
+            <form>
+              <input type="text" required placeholder="Ваш вопрос">
+              <input type="email" required placeholder="Email">
+              <button class="btn btn--primary">Отправить</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div style="margin: 20px 0;">
+        <div class="main-wrapp text-mini">В моб. разрешении - текст по центру:</div>
+        <div class="b-feedback b-feedback--center-mobile">
+          <div class="b-feedback__fon">
+            <img srcset="
+            ../assets/img/main/bg-feedback.jpg 1200w,
+            ../assets/img/main/bg-feedback-900.jpg 900w,
+            ../assets/img/main/bg-feedback-600.jpg 600w,
+          " src="../assets/img/main/bg-feedback.jpg" alt="feedback">
+          </div>
+          <div class="b-feedback__wrapp main-wrapp">
+            <h2>Остались вопросы?</h2>
+            <p>Напишите нам и мы ответим на ваш вопрос</p>
+            <form>
+              <input type="text" required placeholder="Ваш вопрос">
+              <input type="email" required placeholder="Email">
+              <button class="btn btn--primary">Отправить</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="footer__wrapp">
+        <div class="footer-menu">
+          <div class="footer-menu__links">
+            <div class="footer-menu__list">
+              <div class="footer-menu__item">
+                <a href="#">Каталог</a>
+              </div>
+              <div class="footer-menu__item">
+                <a href="#">О нас</a>
+              </div>
+              <div class="footer-menu__item">
+                <a href="#">Контакты</a>
+              </div>
+              <div class="footer-menu__item">
+                <a href="#">Журнал</a>
+              </div>
+              <div class="footer-menu__item">
+                <a href="#">Войти</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-contacts">
+          <div class="footer-contacts__item">
+            <a href="tel:99999999">+7 999 999 99 99</a>
+            <div class="text-mini">по вопросам сотрудничества</div>
+          </div>
+          <div class="footer-contacts__item">
+            <a href="mailto:mail@sitename.ru">mail@sitename.ru</a>
+            <div class="text-mini">вопросы и предложения</div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__wrapp">
+        <div class="footer__copyright">
+          <span>2021 Все права защищены</span>
+          <a href="#">Публичная оферта</a>
+          <a href="#">Политика обработки персональных данных</a>
+        </div>
+        <div class="footer__social">
+          <a href="#">
+            <svg class=>
+              <use href="../assets/img/svg-sprite/sprite.svg#social-facebook"></use>
+            </svg>
+          </a>
+          <a href="#">
+            <svg class=>
+              <use href="../assets/img/svg-sprite/sprite.svg#social-instagram"></use>
+            </svg>
+          </a>
+          <a href="#">
+            <svg class=>
+              <use href="../assets/img/svg-sprite/sprite.svg#social-vk"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="../assets/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,491 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Главная</title>
+  <link rel="stylesheet" href="../assets/styles/main.css">
+  <!-- Disable tap highlight on IE -->
+  <meta name="msapplication-tap-highlight" content="no">
+  <!-- for Chrome on Android -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="application-name" lang="en" content="Главная">
+  <link rel="icon" sizes="192x192" href="../assets/img/favicons/android-chrome-192x192.png">
+  <!-- for Safari on iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Главная">
+  <meta name="theme-color" content="#FFFFFF">
+  <link rel="shortcut icon" href="../assets/img/favicons/favicon.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicons/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicons/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="57x57" href="../assets/img/favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="../assets/img/favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="../assets/img/favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="../assets/img/favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="../assets/img/favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="../assets/img/favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="../assets/img/favicons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="167x167" href="../assets/img/favicons/apple-touch-icon-167x167.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/favicons/apple-touch-icon-180x180.png">
+  <link rel="apple-touch-icon" sizes="1024x1024" href="../assets/img/favicons/apple-touch-icon-1024x1024.png">
+</head>
+
+<body>
+  <div class="main-wrapper">
+    <header class="head head--white">
+      <div class="main-wrapp head__wrapp">
+        <div class="head__wrapp">
+          <a href="/" class="logo head__logo">
+            <svg class=>
+              <use href="../assets/img/svg-sprite/sprite.svg#logo"></use>
+            </svg>
+            <span>SITENAME</span>
+          </a>
+          <button type="button" class="head__burger btn btn--border btn--black btn--icon">
+            <svg class=>
+              <use href="../assets/img/svg-sprite/sprite.svg#burger"></use>
+            </svg>
+          </button>
+          <button type="button" class="head__close btn btn--close">
+            <svg class=>
+              <use href="../assets/img/svg-sprite/sprite.svg#close-icon"></use>
+            </svg>
+          </button>
+        </div>
+        <nav class="head__menu">
+          <a href="../pages/catalog.html" class="btn btn--clear">Каталог</a>
+          <a href="../pages/about.html" class="btn btn--clear">О нас</a>
+          <a href="../pages/contacts.html" class="btn btn--clear">Контакты</a>
+          <a href="../pages/magazine.html" class="btn btn--black btn--border">Журнал</a>
+          <a href="#login" class="head__login btn btn--icon btn--clear btn--hover-red">
+            <svg class=>
+              <use href="../assets/img/svg-sprite/sprite.svg#lock-icon"></use>
+            </svg>
+            <span>Войти</span>
+          </a>
+        </nav>
+      </div>
+    </header>
+    <div class="content">
+      <div class="main-page">
+        <div class="main-page__head">
+          <div class="main-slider">
+            <div class="main-slider__content">
+              <div class="main-slider__item is-active">
+                <img srcset="
+                ../assets/img/content/magazine-photo.jpg 1600w,
+                ../assets/img/content/magazine-photo-1200.jpg 1200w,
+                ../assets/img/content/magazine-photo-900.jpg 900w,
+                ../assets/img/content/magazine-photo-600.jpg 600w,
+              " src="../assets/img/content/magazine-photo.jpg" alt="title">
+              </div>
+              <div class="main-slider__item">
+                <img srcset="
+                ../assets/img/content/photo.jpg 1600w,
+                ../assets/img/content/photo-1200.jpg 1200w,
+                ../assets/img/content/photo-900.jpg 900w,
+                ../assets/img/content/photo-600.jpg 600w,
+              " src="../assets/img/content/photo.jpg" alt="title">
+              </div>
+              <div class="main-slider__item">
+                <img srcset="
+                ../assets/img/content/photo2.jpg 1600w,
+                ../assets/img/content/photo2-1200.jpg 1200w,
+                ../assets/img/content/photo2-900.jpg 900w,
+                ../assets/img/content/photo2-600.jpg 600w,
+              " src="../assets/img/content/photo2.jpg" alt="title">
+              </div>
+              <div class="main-slider__item">
+                <img srcset="
+                ../assets/img/main/bg-feedback.jpg 1200w,
+                ../assets/img/main/bg-feedback-900.jpg 900w,
+                ../assets/img/main/bg-feedback-600.jpg 600w,
+              " src="../assets/img/main/bg-feedback.jpg" alt="photo">
+              </div>
+            </div>
+          </div>
+          <div class="main-wrapp">
+            <div class="main-page__header">
+              <h1>Привет Мир!</h1>
+              <div class="b-filter b-filter--main">
+                <div class="b-filter-tabs">
+                  <button class="is-active">Все</button>
+                  <button>Спорт</button>
+                  <button>Ивенты</button>
+                  <button>Музыка</button>
+                </div>
+                <div class="b-filter__wrapp">
+                  <div class="b-filter-inputs">
+                    <div class="select b-filter--main">
+                      <input type="hidden" name="select-name" value="">
+                      <div class="select__value">
+                        <span>Город</span>
+                        <svg class=>
+                          <use href="../assets/img/svg-sprite/sprite.svg#select-triangle"></use>
+                        </svg>
+                      </div>
+                      <div class="select__list">
+                        <ul>
+                          <li data-val=Москва>Москва</li>
+                          <li data-val=Питер>Питер</li>
+                          <li data-val=Новгород>Новгород</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="select b-filter--main">
+                      <input type="hidden" name="select-name" value="">
+                      <div class="select__value">
+                        <span>Тип значения</span>
+                        <svg class=>
+                          <use href="../assets/img/svg-sprite/sprite.svg#select-triangle"></use>
+                        </svg>
+                      </div>
+                      <div class="select__list">
+                        <ul>
+                          <li data-val=Спорт>Спорт</li>
+                          <li data-val=Ивенты>Ивенты</li>
+                          <li data-val=Музыка>Музыка</li>
+                          <li data-val=Офисы Офисы>Офисы Офисы</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <input type="text" placeholder="Адрес">
+                  </div>
+                  <div class="b-filter-btns">
+                    <button class="btn btn--100">Сбросить фильтры</button>
+                    <button class="btn btn--primary">Найти</button>
+                  </div>
+                </div>
+              </div>
+              <div class="main-slider-dots">
+                <button type="button" class="is-active"></button>
+                <button type="button"></button>
+                <button type="button"></button>
+                <button type="button"></button>
+              </div>
+              <div class="main-steps">
+                <div class="main-steps-item is-active">
+                  <div class="main-steps-item__img">
+                    <svg class=>
+                      <use href="../assets/img/svg-sprite/sprite.svg#contract"></use>
+                    </svg>
+                  </div>
+                  <div class="main-steps-item__info">
+                    <b>Выбор значения</b>
+                    <div>Выберите значение и тип. При необходимости воспользуйтесь поиском по карте.</div>
+                  </div>
+                </div>
+                <div class="main-steps-item">
+                  <div class="main-steps-item__img">
+                    <svg class=>
+                      <use href="../assets/img/svg-sprite/sprite.svg#contract"></use>
+                    </svg>
+                  </div>
+                  <div class="main-steps-item__info">
+                    <b>Выбор значения</b>
+                    <div>Выбранное можно оплатить онлайн. Либо по телефону с оплатой на месте.</div>
+                  </div>
+                </div>
+                <div class="main-steps-item">
+                  <div class="main-steps-item__img">
+                    <svg class=>
+                      <use href="../assets/img/svg-sprite/sprite.svg#contract"></use>
+                    </svg>
+                  </div>
+                  <div class="main-steps-item__info">
+                    <b>Выбор значения</b>
+                    <div>После оплаты картой на нашем сайте вам придет уведомление с подтверждением.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="main-wrapp">
+          <div class="catalog-type-list">
+            <h2 class="catalog-type-list__title">Разделы для <span class="primary-color">разных</span> специалистов</h2>
+            <div class="catalog-type-list__wrapp">
+              <div class="catalog-type-list-item">
+                <svg class=>
+                  <use href="../assets/img/svg-sprite/sprite.svg#placeholder"></use>
+                </svg>
+                <a href="#"><b>Глав. название</b></a>
+                <a href="#">Ссылка 1</a>
+                <a href="#">Ссылка 2</a>
+                <a href="#">Ссылка 3</a>
+              </div>
+              <div class="catalog-type-list-item">
+                <svg class=>
+                  <use href="../assets/img/svg-sprite/sprite.svg#placeholder"></use>
+                </svg>
+                <a href="#"><b>Глав. название</b></a>
+                <a href="#">Ссылка 1</a>
+                <a href="#">Ссылка 2</a>
+                <a href="#">Ссылка 3</a>
+              </div>
+              <div class="catalog-type-list-item">
+                <svg class=>
+                  <use href="../assets/img/svg-sprite/sprite.svg#placeholder"></use>
+                </svg>
+                <a href="#"><b>Глав. название</b></a>
+                <a href="#">Ссылка 1</a>
+                <a href="#">Ссылка 2</a>
+                <a href="#">Ссылка 3</a>
+              </div>
+              <div class="catalog-type-list-item">
+                <svg class=>
+                  <use href="../assets/img/svg-sprite/sprite.svg#placeholder"></use>
+                </svg>
+                <a href="#"><b>Глав. название</b></a>
+                <a href="#">Ссылка 1</a>
+                <a href="#">Ссылка 2</a>
+                <a href="#">Ссылка 3</a>
+              </div>
+              <div class="catalog-type-list-item">
+                <svg class=>
+                  <use href="../assets/img/svg-sprite/sprite.svg#placeholder"></use>
+                </svg>
+                <a href="#"><b>Глав. название</b></a>
+                <a href="#">Ссылка 1</a>
+                <a href="#">Ссылка 2</a>
+                <a href="#">Ссылка 3</a>
+              </div>
+              <div class="catalog-type-list-item">
+                <svg class=>
+                  <use href="../assets/img/svg-sprite/sprite.svg#placeholder"></use>
+                </svg>
+                <a href="#"><b>Глав. название</b></a>
+                <a href="#">Ссылка 1</a>
+                <a href="#">Ссылка 2</a>
+                <a href="#">Ссылка 3</a>
+              </div>
+              <div class="catalog-type-list-item">
+                <svg class=>
+                  <use href="../assets/img/svg-sprite/sprite.svg#placeholder"></use>
+                </svg>
+                <a href="#"><b>Глав. название</b></a>
+                <a href="#">Ссылка 1</a>
+                <a href="#">Ссылка 2</a>
+                <a href="#">Ссылка 3</a>
+              </div>
+              <div class="catalog-type-list-item">
+                <svg class=>
+                  <use href="../assets/img/svg-sprite/sprite.svg#placeholder"></use>
+                </svg>
+                <a href="#"><b>Глав. название</b></a>
+                <a href="#">Ссылка 1</a>
+                <a href="#">Ссылка 2</a>
+                <a href="#">Ссылка 3</a>
+              </div>
+            </div>
+            <div class="catalog-type-list__btn">
+              <button type="button" class="btn btn--black">Показать все</button>
+            </div>
+          </div>
+        </div>
+        <div class="b-search-link-image-map">
+          <div class="b-search-link-image-map__fon">
+            <img srcset="
+            ../assets/img/main/bg-map-block.jpg 1600w,
+            ../assets/img/main/bg-map-block-1200.jpg 1200w,
+            ../assets/img/main/bg-map-block-900.jpg 900w,
+            ../assets/img/main/bg-map-block-600.jpg 600w,
+          " src="../assets/img/main/bg-map-block.jpg" alt="map">
+          </div>
+          <div class="b-search-link-image-map__content main-wrapp">
+            <div>
+              <h2>Удобный поиск</h2>
+              <a href="#" class="btn btn--primary">Попробовать</a>
+            </div>
+          </div>
+        </div>
+        <div class="main-wrapp">
+          <div class="main-page__partners-info">
+            <div class="main-page-partners-link">
+              <div class="main-page-partners-link__desc">
+                <h2>Спонсорам</h2>
+                <p>Сложно сказать, почему многие известные личности набирают популярность среди определенных слоев населения.</p>
+                <a href="#" class="btn btn--primary">Подключиться</a>
+              </div>
+            </div>
+            <div class="main-page-partners-info">
+              <div class="main-page-partners-info__item">
+                <svg class=>
+                  <use href="../assets/img/svg-sprite/sprite.svg#003-sms"></use>
+                </svg>
+                <p><b>Выбор значения</b></p>
+                <p>Кстати, сторонники тоталитаризма в науке набирают популярность среди определенных слоев населения.</p>
+              </div>
+              <div class="main-page-partners-info__item">
+                <svg class=>
+                  <use href="../assets/img/svg-sprite/sprite.svg#contract"></use>
+                </svg>
+                <p><b>Выбор значения</b></p>
+                <p>Кстати, сторонники тоталитаризма в науке набирают популярность среди определенных слоев населения.</p>
+              </div>
+              <div class="main-page-partners-info__item">
+                <svg class=>
+                  <use href="../assets/img/svg-sprite/sprite.svg#eye-icon"></use>
+                </svg>
+                <p><b>Выбор значения</b></p>
+                <p>Кстати, сторонники тоталитаризма в науке набирают популярность среди определенных слоев населения.</p>
+              </div>
+            </div>
+          </div>
+          <div class="magazine-article-favorite">
+            <div class="magazine-article-favorite__desc">
+              <h2 class="magazine-article-favorite__title">Журнал</h2>
+              <p>Кстати, сторонники тоталитаризма в науке набирают популярность среди определенных слоев населения.</p>
+              <a href="#" class="btn btn--black">Все статьи</a>
+            </div>
+            <div class="magazine-article-favorite__items">
+              <a href="#" class="magazine-article-favorite-item">
+                <div class="magazine-article-favorite-item__img">
+                  <img srcset="
+                  ../assets/img/content/magazine-photo.jpg 1600w,
+                  ../assets/img/content/magazine-photo-1200.jpg 1200w,
+                  ../assets/img/content/magazine-photo-900.jpg 900w,
+                  ../assets/img/content/magazine-photo-600.jpg 600w,
+                " src="../assets/img/content/magazine-photo.jpg" alt="title">
+                </div>
+                <div class="magazine-article-favorite-item__desc">
+                  <b>Нет звука приятнее, чем шопот бессменных лидеров</b>
+                  <p>Современные технологии достигли такого уровня.</p>
+                  <span>Читать далее</span>
+                </div>
+              </a>
+              <a href="#" class="magazine-article-favorite-item">
+                <div class="magazine-article-favorite-item__img">
+                  <img srcset="
+                  ../assets/img/content/photo.jpg 1600w,
+                  ../assets/img/content/photo-1200.jpg 1200w,
+                  ../assets/img/content/photo-900.jpg 900w,
+                  ../assets/img/content/photo-600.jpg 600w,
+                " src="../assets/img/content/photo.jpg" alt="title">
+                </div>
+                <div class="magazine-article-favorite-item__desc">
+                  <b>Нет звука приятнее, чем шопот бессменных лидеров</b>
+                  <p>Современные технологии достигли такого уровня.</p>
+                  <span>Читать далее</span>
+                </div>
+              </a>
+              <a href="#" class="magazine-article-favorite-item">
+                <div class="magazine-article-favorite-item__img">
+                  <img srcset="
+                  ../assets/img/content/photo2.jpg 1600w,
+                  ../assets/img/content/photo2-1200.jpg 1200w,
+                  ../assets/img/content/photo2-900.jpg 900w,
+                  ../assets/img/content/photo2-600.jpg 600w,
+                " src="../assets/img/content/photo2.jpg" alt="title">
+                </div>
+                <div class="magazine-article-favorite-item__desc">
+                  <b>Нет звука приятнее, чем шопот бессменных лидеров</b>
+                  <p>Современные технологии достигли такого уровня.</p>
+                  <span>Читать далее</span>
+                </div>
+              </a>
+              <a href="#" class="magazine-article-favorite-item">
+                <div class="magazine-article-favorite-item__img">
+                  <img srcset="
+                  ../assets/img/main/bg-feedback.jpg 1200w,
+                  ../assets/img/main/bg-feedback-900.jpg 900w,
+                  ../assets/img/main/bg-feedback-600.jpg 600w,
+                " src="../assets/img/main/bg-feedback.jpg" alt="photo">
+                </div>
+                <div class="magazine-article-favorite-item__desc">
+                  <b>Нет звука приятнее, чем шопот бессменных лидеров</b>
+                  <p>Современные технологии достигли такого уровня.</p>
+                  <span>Читать далее</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="b-subscribe">
+          <div class="b-subscribe__fon">
+            <img srcset="
+            ../assets/img/main/bg-subscribe.jpg 1600w,
+            ../assets/img/main/bg-subscribe-1200.jpg 1200w,
+            ../assets/img/main/bg-subscribe-900.jpg 900w,
+            ../assets/img/main/bg-subscribe-600.jpg 600w,
+          " src="../assets/img/main/bg-subscribe.jpg" alt="subscribe">
+          </div>
+          <div class="b-subscribe__content main-wrapp">
+            <h2>Подпишись на наши новости</h2>
+            <p>Без спама и рассылок, честно</p>
+            <form action="">
+              <input type="email" placeholder="Email" required>
+              <button class="btn btn--primary" type="submit">Отправить</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="footer__wrapp">
+        <div class="footer-menu">
+          <div class="footer-menu__links">
+            <div class="footer-menu__list">
+              <div class="footer-menu__item">
+                <a href="#">Каталог</a>
+              </div>
+              <div class="footer-menu__item">
+                <a href="#">О нас</a>
+              </div>
+              <div class="footer-menu__item">
+                <a href="#">Контакты</a>
+              </div>
+              <div class="footer-menu__item">
+                <a href="#">Журнал</a>
+              </div>
+              <div class="footer-menu__item">
+                <a href="#">Войти</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-contacts">
+          <div class="footer-contacts__item">
+            <a href="tel:99999999">+7 999 999 99 99</a>
+            <div class="text-mini">по вопросам сотрудничества</div>
+          </div>
+          <div class="footer-contacts__item">
+            <a href="mailto:mail@sitename.ru">mail@sitename.ru</a>
+            <div class="text-mini">вопросы и предложения</div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__wrapp">
+        <div class="footer__copyright">
+          <span>2021 Все права защищены</span>
+          <a href="#">Публичная оферта</a>
+          <a href="#">Политика обработки персональных данных</a>
+        </div>
+        <div class="footer__social">
+          <a href="#">
+            <svg class=>
+              <use href="../assets/img/svg-sprite/sprite.svg#social-facebook"></use>
+            </svg>
+          </a>
+          <a href="#">
+            <svg class=>
+              <use href="../assets/img/svg-sprite/sprite.svg#social-instagram"></use>
+            </svg>
+          </a>
+          <a href="#">
+            <svg class=>
+              <use href="../assets/img/svg-sprite/sprite.svg#social-vk"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="../assets/js/main.js"></script>
+</body>
+
+</html>

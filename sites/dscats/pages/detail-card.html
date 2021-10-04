@@ -1,0 +1,667 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Детальная страница</title>
+  <link rel="stylesheet" href="../assets/styles/main.css">
+  <!-- Disable tap highlight on IE -->
+  <meta name="msapplication-tap-highlight" content="no">
+  <!-- for Chrome on Android -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="application-name" lang="en" content="Детальная страница">
+  <link rel="icon" sizes="192x192" href="../assets/img/favicons/android-chrome-192x192.png">
+  <!-- for Safari on iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Детальная страница">
+  <meta name="theme-color" content="#FFFFFF">
+  <link rel="shortcut icon" href="../assets/img/favicons/favicon.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicons/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicons/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="57x57" href="../assets/img/favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="../assets/img/favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="../assets/img/favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="../assets/img/favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="../assets/img/favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="../assets/img/favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="../assets/img/favicons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="167x167" href="../assets/img/favicons/apple-touch-icon-167x167.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/favicons/apple-touch-icon-180x180.png">
+  <link rel="apple-touch-icon" sizes="1024x1024" href="../assets/img/favicons/apple-touch-icon-1024x1024.png">
+</head>
+
+<body>
+  <div class="main-wrapper">
+    <header class="head head--white">
+      <div class="main-wrapp head__wrapp">
+        <div class="head__wrapp">
+          <a href="/" class="logo head__logo">
+            <svg class=>
+              <use href="../assets/img/svg-sprite/sprite.svg#logo"></use>
+            </svg>
+            <span>SITENAME</span>
+          </a>
+          <button type="button" class="head__burger btn btn--border btn--black btn--icon">
+            <svg class=>
+              <use href="../assets/img/svg-sprite/sprite.svg#burger"></use>
+            </svg>
+          </button>
+          <button type="button" class="head__close btn btn--close">
+            <svg class=>
+              <use href="../assets/img/svg-sprite/sprite.svg#close-icon"></use>
+            </svg>
+          </button>
+        </div>
+        <nav class="head__menu">
+          <a href="../pages/catalog.html" class="btn btn--clear">Каталог</a>
+          <a href="../pages/about.html" class="btn btn--clear">О нас</a>
+          <a href="../pages/contacts.html" class="btn btn--clear">Контакты</a>
+          <a href="../pages/magazine.html" class="btn btn--black btn--border">Журнал</a>
+          <a href="#login" class="head__login btn btn--icon btn--clear btn--hover-red">
+            <svg class=>
+              <use href="../assets/img/svg-sprite/sprite.svg#lock-icon"></use>
+            </svg>
+            <span>Войти</span>
+          </a>
+        </nav>
+      </div>
+    </header>
+    <div class="content room-card">
+      <div class="room-card__mobile-img js-room-card-mobile-img">
+        <img srcset="
+        ../assets/img/main/bg-feedback.jpg 1200w,
+        ../assets/img/main/bg-feedback-900.jpg 900w,
+        ../assets/img/main/bg-feedback-600.jpg 600w,
+      " src="../assets/img/main/bg-feedback.jpg" alt="photo">
+      </div>
+      <div class="room-slider room-card__slider js-room-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide room-slider__item">
+            <img srcset="
+            ../assets/img/content/photo.jpg 1600w,
+            ../assets/img/content/photo-1200.jpg 1200w,
+            ../assets/img/content/photo-900.jpg 900w,
+            ../assets/img/content/photo-600.jpg 600w,
+          " src="../assets/img/content/photo.jpg" alt="title">
+          </div>
+          <div class="swiper-slide room-slider__item">
+            <img srcset="
+            ../assets/img/content/photo2.jpg 1600w,
+            ../assets/img/content/photo2-1200.jpg 1200w,
+            ../assets/img/content/photo2-900.jpg 900w,
+            ../assets/img/content/photo2-600.jpg 600w,
+          " src="../assets/img/content/photo2.jpg" alt="title">
+          </div>
+          <div class="swiper-slide room-slider__item">
+            <img srcset="
+            ../assets/img/content/contacts-1.jpg 1200w,
+            ../assets/img/content/contacts-1-900.jpg 900w,
+            ../assets/img/content/contacts-1-600.jpg 600w,
+          " src="../assets/img/content/contacts-1.jpg" alt="contacts">
+          </div>
+          <div class="swiper-slide room-slider__item">
+            <img srcset="
+            ../assets/img/content/magazine-photo.jpg 1600w,
+            ../assets/img/content/magazine-photo-1200.jpg 1200w,
+            ../assets/img/content/magazine-photo-900.jpg 900w,
+            ../assets/img/content/magazine-photo-600.jpg 600w,
+          " src="../assets/img/content/magazine-photo.jpg" alt="title">
+          </div>
+        </div>
+        <div class="main-wrapp room-slider__footer">
+          <div class="room-slider__footer-container">
+            <button class="btn btn--close js-onexitfullscreen-gallery room-slider__btn-close">
+              <svg class=>
+                <use href="../assets/img/svg-sprite/sprite.svg#close-icon"></use>
+              </svg>
+            </button>
+            <div class="room-slider-desc">
+              <div class="room-slider-desc__title">Заголовок товара</div>
+              <div class="room-slider-desc__btns">
+                <div class="room-slider-desc__price">от 500р</div>
+                <button type="button" class="btn btn--primary">Оформить</button>
+                <button type="button" class="btn btn--black btn--icon">
+                  <svg class=>
+                    <use href="../assets/img/svg-sprite/sprite.svg#like"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="room-slider__footer-btns">
+              <button type="button" class="btn btn--white room-slider__btn js-onfullscreen-gallery">Полноэкранный режим</button>
+              <span class="btn btn--white btn--clear room-slider__btn--clear">4 фото</span>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+      <div class="main-wrapp room-card__main-wrapp">
+        <div class="room-card__container">
+          <div class="room-card__desc-scroll"></div>
+          <div class="room-card-description ">
+            <h3>Описание</h3>
+            <p class="room-card-description__desc">Курс на социально-ориентированный национальный проект даёт нам право принимать самостоятельные решения.</p>
+            <div class="room-card-description__wrapper-btns">
+              <button type="button" class="btn btn--icon room-card-description__btn">
+                <svg class=>
+                  <use href="../assets/img/svg-sprite/sprite.svg#wi-fi"></use>
+                </svg>
+                <span>Доступ в интернет</span>
+              </button>
+              <button type="button" class="btn btn--icon room-card-description__btn">
+                <svg class=>
+                  <use href="../assets/img/svg-sprite/sprite.svg#wi-fi"></use>
+                </svg>
+                <span>Доступ в интернет</span>
+              </button>
+              <button type="button" class="btn btn--icon room-card-description__btn">
+                <svg class=>
+                  <use href="../assets/img/svg-sprite/sprite.svg#wi-fi"></use>
+                </svg>
+                <span>Доступ в интернет</span>
+              </button>
+            </div>
+            <div>
+              <button type="button" class="btn btn--100 btn--icon room-card-description__btn">
+                <svg class=>
+                  <use href="../assets/img/svg-sprite/sprite.svg#plus-icon"></use>
+                </svg>
+                <span>Свойство 1</span>
+              </button>
+              <button type="button" class="btn btn--100 btn--icon room-card-description__btn">
+                <svg class=>
+                  <use href="../assets/img/svg-sprite/sprite.svg#cursor"></use>
+                </svg>
+                <span>Свойство 2</span>
+              </button>
+            </div>
+          </div>
+          <div class="room-card__how-get">
+            <h3>Как оценить</h3>
+            <p>Равным образом, перспективное планирование позволяет оценить значение инновационных методов управления процессами.</p>
+            <p>В своём стремлении улучшить пользовательский опыт мы упускаем, что ключевые особенности структуры проекта, инициированные исключительно синтетически, превращены в посмешище, хотя само их существование приносит несомненную пользу обществу.</p>
+            <p>Следует отметить, что семантический разбор внешних противодействий играет важную роль в формировании дальнейших направлений развития.</p>
+          </div>
+          <div class="room-parking">
+            <h3 class="room-parking__title">Заголовок описания</h3>
+            <div class="room-parking__wrapper">
+              <div class="room-parking__icon">
+                <svg class=>
+                  <use href="../assets/img/svg-sprite/sprite.svg#placeholder"></use>
+                </svg>
+              </div>
+              <div>
+                <h5 class="room-parking__name">Смешно, но склады ломятся от зерна</h5>
+                <p class="room-parking__desc">А также акционеры крупнейших компаний призывают нас к новым свершениям, которые, в свою очередь, должны быть представлены в исключительно положительном свете.</p>
+                <p class="room-parking__desc">Не следует, однако, забывать, что базовый вектор развития не даёт нам иного выбора, кроме определения стандартных подходов.</p>
+                <p class="room-parking__desc">Следует отметить, что курс на социально-ориентированный национальный проект однозначно определяет каждого участника как способного принимать собственные решения касаемо экономической целесообразности принимаемых решений.</p>
+              </div>
+            </div>
+            <div class="room-parking__wrapper">
+              <div class="room-parking__icon">
+                <svg class=>
+                  <use href="../assets/img/svg-sprite/sprite.svg#placeholder"></use>
+                </svg>
+              </div>
+              <div>
+                <h5 class="room-parking__name">Цена вопроса не важна</h5>
+                <p class="room-parking__desc">Базовые сценарии поведения пользователей призывают нас к новым свершениям, которые, в свою очередь, должны быть описаны максимально подробно.</p>
+                <p class="room-parking__desc">Сознание наших соотечественников не замутнено пропагандой</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="room-slider-description js-room-slide-description ">
+          <h3 class="room-slider-description__title">Заголовок товара</h3>
+          <span class="room-slider-description__item">12 см2 <span>до 8 дущ</span></span>
+          <p class="room-slider-description__item">Прототип нового сервиса - это как ласковый перезвон вертикали власти</p>
+          <h3 class="room-slider-description__price">от 500р</h3>
+          <button type="button" class="btn btn--primary room-slider-description__btn-phone">Оформить заказ</button>
+          <button type="button" class="btn btn--black btn--icon">
+            <svg class=>
+              <use href="../assets/img/svg-sprite/sprite.svg#like"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="main-wrapp">
+        <h3>Возможно вас заинтересует</h3>
+      </div>
+      <div class="room-slider-interested">
+        <div class="main-wrapp js-slide-interested">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide room-slider-interested__slide">
+              <div class="card-product js-card-product ">
+                <div class="card-product__wrapper">
+                  <div class="card-product__images">
+                    <img class="js-interested-img active" srcset="
+                    ../assets/img/content/photo2.jpg 1600w,
+                    ../assets/img/content/photo2-1200.jpg 1200w,
+                    ../assets/img/content/photo2-900.jpg 900w,
+                    ../assets/img/content/photo2-600.jpg 600w,
+                  " src="../assets/img/content/photo2.jpg" data-img="1" alt="product photo">
+                    <img class="js-interested-img" srcset="
+                    ../assets/img/content/magazine-photo.jpg 1600w,
+                    ../assets/img/content/magazine-photo-1200.jpg 1200w,
+                    ../assets/img/content/magazine-photo-900.jpg 900w,
+                    ../assets/img/content/magazine-photo-600.jpg 600w,
+                  " src="../assets/img/content/magazine-photo.jpg" data-img="2" alt="product photo">
+                    <img class="js-interested-img" srcset="
+                    ../assets/img/main/bg-feedback.jpg 1200w,
+                    ../assets/img/main/bg-feedback-900.jpg 900w,
+                    ../assets/img/main/bg-feedback-600.jpg 600w,
+                  " src="../assets/img/main/bg-feedback.jpg" data-img="3" alt="product photo">
+                    <img class="js-interested-img" srcset="
+                    ../assets/img/content/photo.jpg 1600w,
+                    ../assets/img/content/photo-1200.jpg 1200w,
+                    ../assets/img/content/photo-900.jpg 900w,
+                    ../assets/img/content/photo-600.jpg 600w,
+                  " src="../assets/img/content/photo.jpg" data-img="4" alt="product photo">
+                    <div class="card-product__box">
+                      <div class="card-product__el js-card-product-el active" data-img-el="1"></div>
+                      <div class="card-product__el js-card-product-el" data-img-el="2"></div>
+                      <div class="card-product__el js-card-product-el" data-img-el="3"></div>
+                      <div class="card-product__el js-card-product-el" data-img-el="4"></div>
+                    </div>
+                  </div>
+                  <div class="card-product__container">
+                    <h4 class="card-product__title">Заголовок</h4>
+                    <div class="card-product__inner">
+                      <div class="card-product__item">
+                        <svg class=>
+                          <use href="../assets/img/svg-sprite/sprite.svg#cursor"></use>
+                        </svg>
+                        <span class="card-product__text">16см</span>
+                      </div>
+                      <div class="card-product__item">
+                        <svg class=>
+                          <use href="../assets/img/svg-sprite/sprite.svg#plus-icon"></use>
+                        </svg>
+                        <span class="card-product__text">8 душ</span>
+                      </div>
+                      <div class="card-product__item">
+                        <svg class=>
+                          <use href="../assets/img/svg-sprite/sprite.svg#stars-icon"></use>
+                        </svg>
+                        <span class="card-product__text">Станция</span>
+                      </div>
+                    </div>
+                    <div class="card-product__btns">
+                      <a href="javascript:void(0);" class="btn btn--primary">Оформить</a>
+                      <button type="button" class="btn btn--black btn--border btn--icon">
+                        <svg class=>
+                          <use href="../assets/img/svg-sprite/sprite.svg#like"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <span class="card-product__price">от 500р</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide room-slider-interested__slide">
+              <div class="card-product js-card-product ">
+                <div class="card-product__wrapper">
+                  <div class="card-product__images">
+                    <img class="js-interested-img active" srcset="
+                    ../assets/img/content/photo2.jpg 1600w,
+                    ../assets/img/content/photo2-1200.jpg 1200w,
+                    ../assets/img/content/photo2-900.jpg 900w,
+                    ../assets/img/content/photo2-600.jpg 600w,
+                  " src="../assets/img/content/photo2.jpg" data-img="1" alt="product photo">
+                    <img class="js-interested-img" srcset="
+                    ../assets/img/content/magazine-photo.jpg 1600w,
+                    ../assets/img/content/magazine-photo-1200.jpg 1200w,
+                    ../assets/img/content/magazine-photo-900.jpg 900w,
+                    ../assets/img/content/magazine-photo-600.jpg 600w,
+                  " src="../assets/img/content/magazine-photo.jpg" data-img="2" alt="product photo">
+                    <img class="js-interested-img" srcset="
+                    ../assets/img/main/bg-feedback.jpg 1200w,
+                    ../assets/img/main/bg-feedback-900.jpg 900w,
+                    ../assets/img/main/bg-feedback-600.jpg 600w,
+                  " src="../assets/img/main/bg-feedback.jpg" data-img="3" alt="product photo">
+                    <img class="js-interested-img" srcset="
+                    ../assets/img/content/photo.jpg 1600w,
+                    ../assets/img/content/photo-1200.jpg 1200w,
+                    ../assets/img/content/photo-900.jpg 900w,
+                    ../assets/img/content/photo-600.jpg 600w,
+                  " src="../assets/img/content/photo.jpg" data-img="4" alt="product photo">
+                    <div class="card-product__box">
+                      <div class="card-product__el js-card-product-el active" data-img-el="1"></div>
+                      <div class="card-product__el js-card-product-el" data-img-el="2"></div>
+                      <div class="card-product__el js-card-product-el" data-img-el="3"></div>
+                      <div class="card-product__el js-card-product-el" data-img-el="4"></div>
+                    </div>
+                  </div>
+                  <div class="card-product__container">
+                    <h4 class="card-product__title">Заголовок</h4>
+                    <div class="card-product__inner">
+                      <div class="card-product__item">
+                        <svg class=>
+                          <use href="../assets/img/svg-sprite/sprite.svg#cursor"></use>
+                        </svg>
+                        <span class="card-product__text">16см</span>
+                      </div>
+                      <div class="card-product__item">
+                        <svg class=>
+                          <use href="../assets/img/svg-sprite/sprite.svg#plus-icon"></use>
+                        </svg>
+                        <span class="card-product__text">8 душ</span>
+                      </div>
+                      <div class="card-product__item">
+                        <svg class=>
+                          <use href="../assets/img/svg-sprite/sprite.svg#stars-icon"></use>
+                        </svg>
+                        <span class="card-product__text">Станция</span>
+                      </div>
+                    </div>
+                    <div class="card-product__btns">
+                      <a href="javascript:void(0);" class="btn btn--primary">Оформить</a>
+                      <button type="button" class="btn btn--black btn--border btn--icon">
+                        <svg class=>
+                          <use href="../assets/img/svg-sprite/sprite.svg#like"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <span class="card-product__price">от 500р</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide room-slider-interested__slide">
+              <div class="card-product js-card-product ">
+                <div class="card-product__wrapper">
+                  <div class="card-product__images">
+                    <img class="js-interested-img active" srcset="
+                    ../assets/img/content/photo2.jpg 1600w,
+                    ../assets/img/content/photo2-1200.jpg 1200w,
+                    ../assets/img/content/photo2-900.jpg 900w,
+                    ../assets/img/content/photo2-600.jpg 600w,
+                  " src="../assets/img/content/photo2.jpg" data-img="1" alt="product photo">
+                    <img class="js-interested-img" srcset="
+                    ../assets/img/content/magazine-photo.jpg 1600w,
+                    ../assets/img/content/magazine-photo-1200.jpg 1200w,
+                    ../assets/img/content/magazine-photo-900.jpg 900w,
+                    ../assets/img/content/magazine-photo-600.jpg 600w,
+                  " src="../assets/img/content/magazine-photo.jpg" data-img="2" alt="product photo">
+                    <img class="js-interested-img" srcset="
+                    ../assets/img/main/bg-feedback.jpg 1200w,
+                    ../assets/img/main/bg-feedback-900.jpg 900w,
+                    ../assets/img/main/bg-feedback-600.jpg 600w,
+                  " src="../assets/img/main/bg-feedback.jpg" data-img="3" alt="product photo">
+                    <img class="js-interested-img" srcset="
+                    ../assets/img/content/photo.jpg 1600w,
+                    ../assets/img/content/photo-1200.jpg 1200w,
+                    ../assets/img/content/photo-900.jpg 900w,
+                    ../assets/img/content/photo-600.jpg 600w,
+                  " src="../assets/img/content/photo.jpg" data-img="4" alt="product photo">
+                    <div class="card-product__box">
+                      <div class="card-product__el js-card-product-el active" data-img-el="1"></div>
+                      <div class="card-product__el js-card-product-el" data-img-el="2"></div>
+                      <div class="card-product__el js-card-product-el" data-img-el="3"></div>
+                      <div class="card-product__el js-card-product-el" data-img-el="4"></div>
+                    </div>
+                  </div>
+                  <div class="card-product__container">
+                    <h4 class="card-product__title">Заголовок</h4>
+                    <div class="card-product__inner">
+                      <div class="card-product__item">
+                        <svg class=>
+                          <use href="../assets/img/svg-sprite/sprite.svg#cursor"></use>
+                        </svg>
+                        <span class="card-product__text">16см</span>
+                      </div>
+                      <div class="card-product__item">
+                        <svg class=>
+                          <use href="../assets/img/svg-sprite/sprite.svg#plus-icon"></use>
+                        </svg>
+                        <span class="card-product__text">8 душ</span>
+                      </div>
+                      <div class="card-product__item">
+                        <svg class=>
+                          <use href="../assets/img/svg-sprite/sprite.svg#stars-icon"></use>
+                        </svg>
+                        <span class="card-product__text">Станция</span>
+                      </div>
+                    </div>
+                    <div class="card-product__btns">
+                      <a href="javascript:void(0);" class="btn btn--primary">Оформить</a>
+                      <button type="button" class="btn btn--black btn--border btn--icon">
+                        <svg class=>
+                          <use href="../assets/img/svg-sprite/sprite.svg#like"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <span class="card-product__price">от 500р</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide room-slider-interested__slide">
+              <div class="card-product js-card-product ">
+                <div class="card-product__wrapper">
+                  <div class="card-product__images">
+                    <img class="js-interested-img active" srcset="
+                    ../assets/img/content/photo2.jpg 1600w,
+                    ../assets/img/content/photo2-1200.jpg 1200w,
+                    ../assets/img/content/photo2-900.jpg 900w,
+                    ../assets/img/content/photo2-600.jpg 600w,
+                  " src="../assets/img/content/photo2.jpg" data-img="1" alt="product photo">
+                    <img class="js-interested-img" srcset="
+                    ../assets/img/content/magazine-photo.jpg 1600w,
+                    ../assets/img/content/magazine-photo-1200.jpg 1200w,
+                    ../assets/img/content/magazine-photo-900.jpg 900w,
+                    ../assets/img/content/magazine-photo-600.jpg 600w,
+                  " src="../assets/img/content/magazine-photo.jpg" data-img="2" alt="product photo">
+                    <img class="js-interested-img" srcset="
+                    ../assets/img/main/bg-feedback.jpg 1200w,
+                    ../assets/img/main/bg-feedback-900.jpg 900w,
+                    ../assets/img/main/bg-feedback-600.jpg 600w,
+                  " src="../assets/img/main/bg-feedback.jpg" data-img="3" alt="product photo">
+                    <img class="js-interested-img" srcset="
+                    ../assets/img/content/photo.jpg 1600w,
+                    ../assets/img/content/photo-1200.jpg 1200w,
+                    ../assets/img/content/photo-900.jpg 900w,
+                    ../assets/img/content/photo-600.jpg 600w,
+                  " src="../assets/img/content/photo.jpg" data-img="4" alt="product photo">
+                    <div class="card-product__box">
+                      <div class="card-product__el js-card-product-el active" data-img-el="1"></div>
+                      <div class="card-product__el js-card-product-el" data-img-el="2"></div>
+                      <div class="card-product__el js-card-product-el" data-img-el="3"></div>
+                      <div class="card-product__el js-card-product-el" data-img-el="4"></div>
+                    </div>
+                  </div>
+                  <div class="card-product__container">
+                    <h4 class="card-product__title">Заголовок</h4>
+                    <div class="card-product__inner">
+                      <div class="card-product__item">
+                        <svg class=>
+                          <use href="../assets/img/svg-sprite/sprite.svg#cursor"></use>
+                        </svg>
+                        <span class="card-product__text">16см</span>
+                      </div>
+                      <div class="card-product__item">
+                        <svg class=>
+                          <use href="../assets/img/svg-sprite/sprite.svg#plus-icon"></use>
+                        </svg>
+                        <span class="card-product__text">8 душ</span>
+                      </div>
+                      <div class="card-product__item">
+                        <svg class=>
+                          <use href="../assets/img/svg-sprite/sprite.svg#stars-icon"></use>
+                        </svg>
+                        <span class="card-product__text">Станция</span>
+                      </div>
+                    </div>
+                    <div class="card-product__btns">
+                      <a href="javascript:void(0);" class="btn btn--primary">Оформить</a>
+                      <button type="button" class="btn btn--black btn--border btn--icon">
+                        <svg class=>
+                          <use href="../assets/img/svg-sprite/sprite.svg#like"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <span class="card-product__price">от 500р</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide room-slider-interested__slide">
+              <div class="card-product js-card-product ">
+                <div class="card-product__wrapper">
+                  <div class="card-product__images">
+                    <img class="js-interested-img active" srcset="
+                    ../assets/img/content/photo2.jpg 1600w,
+                    ../assets/img/content/photo2-1200.jpg 1200w,
+                    ../assets/img/content/photo2-900.jpg 900w,
+                    ../assets/img/content/photo2-600.jpg 600w,
+                  " src="../assets/img/content/photo2.jpg" data-img="1" alt="product photo">
+                    <img class="js-interested-img" srcset="
+                    ../assets/img/content/magazine-photo.jpg 1600w,
+                    ../assets/img/content/magazine-photo-1200.jpg 1200w,
+                    ../assets/img/content/magazine-photo-900.jpg 900w,
+                    ../assets/img/content/magazine-photo-600.jpg 600w,
+                  " src="../assets/img/content/magazine-photo.jpg" data-img="2" alt="product photo">
+                    <img class="js-interested-img" srcset="
+                    ../assets/img/main/bg-feedback.jpg 1200w,
+                    ../assets/img/main/bg-feedback-900.jpg 900w,
+                    ../assets/img/main/bg-feedback-600.jpg 600w,
+                  " src="../assets/img/main/bg-feedback.jpg" data-img="3" alt="product photo">
+                    <img class="js-interested-img" srcset="
+                    ../assets/img/content/photo.jpg 1600w,
+                    ../assets/img/content/photo-1200.jpg 1200w,
+                    ../assets/img/content/photo-900.jpg 900w,
+                    ../assets/img/content/photo-600.jpg 600w,
+                  " src="../assets/img/content/photo.jpg" data-img="4" alt="product photo">
+                    <div class="card-product__box">
+                      <div class="card-product__el js-card-product-el active" data-img-el="1"></div>
+                      <div class="card-product__el js-card-product-el" data-img-el="2"></div>
+                      <div class="card-product__el js-card-product-el" data-img-el="3"></div>
+                      <div class="card-product__el js-card-product-el" data-img-el="4"></div>
+                    </div>
+                  </div>
+                  <div class="card-product__container">
+                    <h4 class="card-product__title">Заголовок</h4>
+                    <div class="card-product__inner">
+                      <div class="card-product__item">
+                        <svg class=>
+                          <use href="../assets/img/svg-sprite/sprite.svg#cursor"></use>
+                        </svg>
+                        <span class="card-product__text">16см</span>
+                      </div>
+                      <div class="card-product__item">
+                        <svg class=>
+                          <use href="../assets/img/svg-sprite/sprite.svg#plus-icon"></use>
+                        </svg>
+                        <span class="card-product__text">8 душ</span>
+                      </div>
+                      <div class="card-product__item">
+                        <svg class=>
+                          <use href="../assets/img/svg-sprite/sprite.svg#stars-icon"></use>
+                        </svg>
+                        <span class="card-product__text">Станция</span>
+                      </div>
+                    </div>
+                    <div class="card-product__btns">
+                      <a href="javascript:void(0);" class="btn btn--primary">Оформить</a>
+                      <button type="button" class="btn btn--black btn--border btn--icon">
+                        <svg class=>
+                          <use href="../assets/img/svg-sprite/sprite.svg#like"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <span class="card-product__price">от 500р</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="b-feedback b-feedback--dark room-card__form">
+        <div class="b-feedback__fon">
+          <img srcset="
+          ../assets/img/main/bg-feedback.jpg 1200w,
+          ../assets/img/main/bg-feedback-900.jpg 900w,
+          ../assets/img/main/bg-feedback-600.jpg 600w,
+        " src="../assets/img/main/bg-feedback.jpg" alt="feedback">
+        </div>
+        <div class="b-feedback__wrapp main-wrapp">
+          <h2>Остались вопросы?</h2>
+          <p>Напишите нам и мы ответим на ваш вопрос</p>
+          <form>
+            <input type="text" required placeholder="Ваш вопрос">
+            <input type="email" required placeholder="Email">
+            <button class="btn btn--primary">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="footer__wrapp">
+        <div class="footer-menu">
+          <div class="footer-menu__links">
+            <div class="footer-menu__list">
+              <div class="footer-menu__item">
+                <a href="#">Каталог</a>
+              </div>
+              <div class="footer-menu__item">
+                <a href="#">О нас</a>
+              </div>
+              <div class="footer-menu__item">
+                <a href="#">Контакты</a>
+              </div>
+              <div class="footer-menu__item">
+                <a href="#">Журнал</a>
+              </div>
+              <div class="footer-menu__item">
+                <a href="#">Войти</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-contacts">
+          <div class="footer-contacts__item">
+            <a href="tel:99999999">+7 999 999 99 99</a>
+            <div class="text-mini">по вопросам сотрудничества</div>
+          </div>
+          <div class="footer-contacts__item">
+            <a href="mailto:mail@sitename.ru">mail@sitename.ru</a>
+            <div class="text-mini">вопросы и предложения</div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__wrapp">
+        <div class="footer__copyright">
+          <span>2021 Все права защищены</span>
+          <a href="#">Публичная оферта</a>
+          <a href="#">Политика обработки персональных данных</a>
+        </div>
+        <div class="footer__social">
+          <a href="#">
+            <svg class=>
+              <use href="../assets/img/svg-sprite/sprite.svg#social-facebook"></use>
+            </svg>
+          </a>
+          <a href="#">
+            <svg class=>
+              <use href="../assets/img/svg-sprite/sprite.svg#social-instagram"></use>
+            </svg>
+          </a>
+          <a href="#">
+            <svg class=>
+              <use href="../assets/img/svg-sprite/sprite.svg#social-vk"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="../assets/js/main.js"></script>
+</body>
+
+</html>
