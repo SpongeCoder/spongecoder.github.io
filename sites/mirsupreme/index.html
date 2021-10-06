@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>MIR Supreme</title>
+  <meta name="description" content="MIR Supreme">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<link rel="icon" href="favicon.ico"><script defer src="js/app.js"></script><link href="css/app.css" rel="stylesheet"></head>
+<body>
+
+<svg xmlns="http://www.w3.org/2000/svg" style="width: 0; height: 0; opacity: 0; position: absolute;">
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27 42" id="app">
+    <rect x="1" y="1" width="24.25" height="40" rx="2.281" stroke="#fff" stroke-width="2"></rect>
+    <rect x="9.188" y="1.656" width="8.531" height="1.313" rx=".656" stroke="#fff" stroke-width="1.313"></rect>
+    <rect x="7.063" y="35.906" width="12.781" height="1" rx=".5" fill="#1AB57A" stroke="#1AB57A"></rect>
+  </symbol>
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 25" id="apple">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M20.711 17.714c-.558 1.236-.825 1.789-1.544 2.882-1.002 1.526-2.416 3.426-4.167 3.442-1.556.015-1.955-1.012-4.068-1-2.111.011-2.552 1.02-4.109 1.004-1.75-.016-3.09-1.732-4.093-3.258-2.804-4.267-3.097-9.276-1.368-11.938 1.23-1.892 3.168-3 4.99-3 1.857 0 3.024 1.018 4.559 1.018 1.489 0 2.396-1.019 4.541-1.019 1.622 0 3.34.883 4.565 2.41-4.012 2.198-3.36 7.928.694 9.46zM13.824 4.14c.78-1 1.372-2.414 1.157-3.857-1.274.088-2.763.897-3.633 1.954-.79.958-1.441 2.38-1.188 3.763 1.391.042 2.83-.788 3.664-1.86z" fill="#000"></path>
+  </symbol>
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" id="cashback">
+    <path d="M24.223 8.571L17.27 1.619a2.109 2.109 0 00-2.985 0L7.334 8.571" stroke="#1AB57A" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+    <path d="M20 4.349l2.73-2.73a2.109 2.109 0 012.985 0l6.952 6.952" stroke="#1AB57A" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+    <path d="M31.438 27.57h7.56v-8.444h-7.56a2.995 2.995 0 00-2.996 2.996v2.453a2.995 2.995 0 002.996 2.996z" stroke="#fff" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+    <path d="M34.778 38.127H5.222A4.221 4.221 0 011 33.904v-21.11A4.221 4.221 0 015.222 8.57h29.556A4.221 4.221 0 0139 12.793v21.111a4.221 4.221 0 01-4.222 4.222z" stroke="#fff" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+  </symbol>
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 20" id="google-play">
+    <path d="M0 18.5v-17A1.5 1.5 0 01.844.15l9.846 9.847-9.85 9.85A1.5 1.5 0 010 18.5zm13.814-5.38L3.048 19.338l8.491-8.491 2.275 2.275zm3.347-4.312a1.498 1.498 0 01.016 2.371L14.89 12.5l-2.502-2.502 2.5-2.5 2.273 1.311zM3.054.664l10.759 6.211-2.274 2.274L3.054.664z" fill="#000"></path>
+  </symbol>
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 40" id="jcb">
+    <path d="M51.175 31.92a7.853 7.853 0 01-7.854 7.854H.676V8.721A7.853 7.853 0 018.53.866h42.645V31.92z" fill="#fff"></path>
+    <path d="M37.272 23.954h3.246c.095 0 .3-.015.38-.031a1.458 1.458 0 001.14-1.441c0-.76-.522-1.315-1.14-1.441a3.063 3.063 0 00-.38-.032h-3.246v2.945z" fill="url(#paint0_linear)"></path>
+    <path d="M40.138 3.479a5.606 5.606 0 00-5.606 5.606v5.827h7.934c.19 0 .411.016.554.016 1.79.095 3.12 1.014 3.12 2.613 0 1.267-.903 2.328-2.55 2.581v.064c1.821.126 3.215 1.124 3.215 2.707 0 1.71-1.536 2.803-3.563 2.803h-8.71V37.13h8.235a5.606 5.606 0 005.605-5.606V3.479h-8.234z" fill="url(#paint1_linear)"></path>
+    <path d="M41.658 17.969c0-.745-.523-1.236-1.124-1.346a1.63 1.63 0 00-.317-.032h-2.945v2.74h2.945c.11 0 .27-.016.317-.032.617-.095 1.124-.586 1.124-1.33z" fill="url(#paint2_linear)"></path>
+    <path d="M9.1 3.479a5.606 5.606 0 00-5.606 5.606V22.94c1.568.76 3.2 1.267 4.862 1.267 1.948 0 3.009-1.188 3.009-2.771v-6.509h4.83v6.509c0 2.55-1.568 4.592-6.92 4.592-3.231 0-5.765-.697-5.765-.697v11.83h8.235a5.606 5.606 0 005.606-5.607V3.48H9.1z" fill="url(#paint3_linear)"></path>
+    <path d="M24.619 3.479a5.606 5.606 0 00-5.606 5.606v7.348c1.425-1.22 3.88-1.98 7.87-1.806 2.138.095 4.403.665 4.403.665v2.376c-1.14-.57-2.502-1.109-4.244-1.235-3.025-.222-4.862 1.25-4.862 3.88 0 2.628 1.821 4.1 4.862 3.879 1.758-.127 3.135-.681 4.244-1.235v2.375s-2.265.57-4.402.665c-3.991.174-6.446-.586-7.87-1.805v12.953h8.234a5.606 5.606 0 005.605-5.605V3.48H24.62z" fill="url(#paint4_linear)"></path>
+    <defs>
+      <linearGradient id="paint0_linear" x1="34.529" y1="22.48" x2="48.405" y2="22.48" gradientUnits="userSpaceOnUse">
+        <stop stop-color="#007F49"></stop>
+        <stop offset=".229" stop-color="#008D49"></stop>
+        <stop offset=".743" stop-color="#4FAC48"></stop>
+        <stop offset="1" stop-color="#62BB46"></stop>
+      </linearGradient>
+      <linearGradient id="paint1_linear" x1="34.529" y1="20.318" x2="48.405" y2="20.318" gradientUnits="userSpaceOnUse">
+        <stop stop-color="#007F49"></stop>
+        <stop offset=".229" stop-color="#008D49"></stop>
+        <stop offset=".743" stop-color="#4FAC48"></stop>
+        <stop offset="1" stop-color="#62BB46"></stop>
+      </linearGradient>
+      <linearGradient id="paint2_linear" x1="34.529" y1="17.964" x2="48.404" y2="17.964" gradientUnits="userSpaceOnUse">
+        <stop stop-color="#007F49"></stop>
+        <stop offset=".229" stop-color="#008D49"></stop>
+        <stop offset=".743" stop-color="#4FAC48"></stop>
+        <stop offset="1" stop-color="#62BB46"></stop>
+      </linearGradient>
+      <linearGradient id="paint3_linear" x1="3.463" y1="20.318" x2="17.554" y2="20.318" gradientUnits="userSpaceOnUse">
+        <stop stop-color="#333376"></stop>
+        <stop offset=".475" stop-color="#005999"></stop>
+        <stop offset=".826" stop-color="#006FB3"></stop>
+        <stop offset="1" stop-color="#0077C0"></stop>
+      </linearGradient>
+      <linearGradient id="paint4_linear" x1="18.922" y1="20.318" x2="32.607" y2="20.318" gradientUnits="userSpaceOnUse">
+        <stop stop-color="#743237"></stop>
+        <stop offset=".173" stop-color="#8C3039"></stop>
+        <stop offset=".573" stop-color="#BE273F"></stop>
+        <stop offset=".859" stop-color="#DF1E44"></stop>
+        <stop offset="1" stop-color="#ED1846"></stop>
+      </linearGradient>
+    </defs>
+  </symbol>
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 22" id="left-arrow-btn">
+    <path d="M11 20l-9-9 9-9" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+  </symbol>
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 69 56" id="maestro">
+    <path d="M23.97 48.409v-2.76a1.633 1.633 0 00-1.726-1.743 1.702 1.702 0 00-1.545.782 1.615 1.615 0 00-1.454-.782 1.453 1.453 0 00-1.288.653v-.543h-.956v4.393h.966v-2.433a1.027 1.027 0 011.076-1.169c.635 0 .957.414.957 1.16v2.442h.966v-2.433a1.035 1.035 0 011.076-1.169c.653 0 .966.414.966 1.16v2.442h.961zm5.381-2.194V44.02h-.966v.533a1.664 1.664 0 00-1.38-.644 2.3 2.3 0 100 4.6 1.664 1.664 0 001.38-.644v.534h.957l.01-2.185zm-3.555 0a1.33 1.33 0 111.334 1.407 1.317 1.317 0 01-1.344-1.407h.01zm23.997-2.3c.315 0 .627.059.92.175a2.3 2.3 0 01.75.487c.213.209.381.457.496.732.24.59.24 1.25 0 1.84a2.221 2.221 0 01-.496.731c-.216.21-.47.376-.75.488a2.604 2.604 0 01-1.886 0 2.244 2.244 0 01-1.237-1.219c-.24-.59-.24-1.25 0-1.84a2.245 2.245 0 011.237-1.22c.303-.125.629-.19.957-.188l.009.014zm0 .92a1.428 1.428 0 00-.547.101 1.294 1.294 0 00-.437.29 1.35 1.35 0 00-.29.46 1.6 1.6 0 000 1.14 1.27 1.27 0 00.727.75c.35.138.74.138 1.09 0 .172-.063.328-.162.46-.29.127-.131.226-.288.29-.46a1.6 1.6 0 000-1.14 1.334 1.334 0 00-.29-.46 1.318 1.318 0 00-.46-.29 1.428 1.428 0 00-.552-.129l.009.028zm-15.244 1.38c0-1.38-.855-2.3-2.084-2.3a2.3 2.3 0 10.065 4.6 2.667 2.667 0 001.798-.617l-.46-.708a2.093 2.093 0 01-1.279.46 1.219 1.219 0 01-1.315-1.076h3.261c.014-.115.014-.23.014-.36zm-3.27-.387a1.131 1.131 0 011.154-1.062 1.09 1.09 0 011.113 1.067l-2.267-.005zm7.295-.69a2.83 2.83 0 00-1.38-.377c-.524 0-.837.194-.837.515 0 .322.331.378.745.433l.46.064c.957.138 1.536.543 1.536 1.316s-.736 1.435-2 1.435a3.169 3.169 0 01-1.9-.57l.46-.745c.422.313.937.475 1.462.46.654 0 1.003-.194 1.003-.534 0-.248-.248-.386-.773-.46l-.46-.064c-.984-.139-1.518-.58-1.518-1.298 0-.874.718-1.407 1.84-1.407a3.284 3.284 0 011.79.46l-.428.773zm4.6-.248h-1.56v1.983c0 .46.157.736.635.736.299-.01.59-.096.847-.249l.276.819a2.244 2.244 0 01-1.196.34c-1.132 0-1.528-.607-1.528-1.628v-2h-.892v-.875h.892v-1.334h.966v1.334h1.56v.874zm3.307-.984c.232 0 .462.041.68.12l-.294.92a1.555 1.555 0 00-.597-.111c-.626 0-.92.405-.92 1.132v2.46h-.957v-4.392h.947v.533a1.298 1.298 0 011.16-.644l-.019-.018zm6.615 3.864a.46.46 0 01.317.124.428.428 0 01-.143.708.431.431 0 01-.174.037.46.46 0 01-.414-.267.433.433 0 01.096-.478.46.46 0 01.295-.124h.023zm0 .777a.326.326 0 00.239-.101.341.341 0 00-.24-.58.347.347 0 00-.243.101.34.34 0 000 .46.34.34 0 00.244.102v.018zm.027-.547a.185.185 0 01.12.036.115.115 0 01.041.097.112.112 0 01-.032.083.16.16 0 01-.096.041l.133.152h-.106l-.124-.152h-.041v.152h-.088v-.423l.193.014zm-.1.078v.11h.1a.096.096 0 00.056 0 .046.046 0 000-.041.046.046 0 000-.042.098.098 0 00-.056 0l-.1-.027z" fill="#fff"></path>
+    <path d="M41.794 10.502h-14.49v26.04h14.49v-26.04z" fill="#7673C0"></path>
+    <path d="M28.224 23.524a16.532 16.532 0 016.325-13.022 16.56 16.56 0 100 26.04 16.531 16.531 0 01-6.325-13.018z" fill="#EB001B"></path>
+    <path d="M59.76 33.782v-.516h.217v-.11h-.547v.11h.216v.534l.115-.018zm1.064 0v-.644h-.166l-.193.46-.194-.46h-.17v.644h.12v-.483l.18.418h.123l.18-.419v.488l.12-.005zm.515-10.258a16.56 16.56 0 01-26.79 13.017 16.56 16.56 0 000-26.04A16.56 16.56 0 0161.343 23.52l-.004.005z" fill="#00A1DF"></path>
+  </symbol>
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" id="special">
+    <path d="M7.132 28.196L1 22.064l6.132-6.132V7.26h8.672l6.132-6.132 6.132 6.132h8.672v8.672l6.132 6.132-6.132 6.132v8.672h-8.672L21.936 43l-6.132-6.132H7.132v-8.672z" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+    <path d="M27.432 28.345a.777.777 0 100-1.553.777.777 0 000 1.553zm-10.982-11a.777.777 0 100-1.553.777.777 0 000 1.553z" fill="#00965D" stroke="#00965D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+    <path d="M15.653 28.345l12.562-12.562" stroke="#1AB57A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+  </symbol>
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 62 40" id="union">
+    <path d="M58.907.866h-46.61c-2.18 0-4.288 1.769-4.78 3.962L.346 35.812c-.562 2.194.773 3.962 2.953 3.962h46.61c2.179 0 4.288-1.769 4.85-3.962l7.1-30.984c.563-2.193-.843-3.962-2.952-3.962z" fill="#fff"></path>
+    <path d="M14.054 2.635h13.99c1.969 0 3.164 1.627 2.742 3.607l-6.538 28.156c-.492 1.98-2.39 3.607-4.359 3.607H5.83c-1.968 0-3.164-1.627-2.742-3.607L9.625 6.242c.492-1.98 2.46-3.607 4.43-3.607z" fill="#DF3333"></path>
+    <path d="M26.85 2.635h16.098c1.969 0 1.055 1.627.633 3.607l-6.538 28.156c-.422 1.98-.281 3.607-2.25 3.607H18.694c-1.968 0-3.163-1.627-2.742-3.607l6.539-28.156c.492-1.98 2.46-3.607 4.358-3.607z" fill="#004989"></path>
+    <path d="M42.386 2.635h13.99c1.968 0 3.163 1.627 2.742 3.607L52.58 34.398c-.493 1.98-2.39 3.607-4.36 3.607H34.16c-1.968 0-3.163-1.627-2.741-3.607l6.538-28.156c.492-1.98 2.46-3.607 4.429-3.607z" fill="#00808A"></path>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M39.996 29.163h1.335l.352-1.273h-1.336l-.351 1.273zm1.054-3.537l-.422 1.485s.492-.283.774-.353c.28-.071.703-.142.703-.142l.28-.99H41.05zm.703-2.193l-.492 1.485s.492-.212.773-.283c.282-.07.703-.07.703-.07l.352-1.062h-1.336v-.07zm2.883 0l-1.688 5.66h.492l-.351 1.202h-.492l-.07.353H40.91l.14-.353h-3.304l.351-1.061h.352l1.758-5.801.351-1.203h1.687l-.14.566s.421-.283.843-.424c.422-.071 2.812-.142 2.812-.142l-.562 1.203h-.563z" fill="#fff"></path>
+    <path d="M45.409 22.3h1.757v.637c0 .142.07.142.282.142h.351l-.281 1.132h-.984c-.844.07-1.125-.283-1.125-.707V22.3zm.211 5.165h-1.688l.282-.99h1.898l.281-.92h-1.898l.351-1.132h5.273l-.281 1.203H48.01l-.281.92h1.757l-.28.99h-1.9l-.35.424h.773l.21 1.203c0 .141 0 .212.071.283.07.07.281.07.422.07h.21l-.35 1.203h-1.055c-.211 0-.282-.141-.422-.212-.07-.07-.281-.212-.281-.425l-.211-1.202-.844 1.203c-.281.353-.633.707-1.265.707h-1.195l.351-1.061h.492c.14 0 .281-.071.352-.071.07-.07.14-.07.28-.212l1.126-1.981zm-18.49-2.617h4.43l-.352 1.06H29.45l-.28.92h1.827l-.352 1.132h-1.827l-.422 1.486c-.07.141.422.212.633.212l.913-.142-.351 1.203h-2.039c-.14 0-.281 0-.492-.07-.14-.071-.281-.142-.351-.213-.07-.141-.211-.212-.141-.495l.562-1.98h-.914l.352-1.133h1.054l.282-.92h-.985l.211-1.06zm3.023-1.981h1.828l-.351 1.132h-2.531l-.211.212c-.14.141-.14.07-.281.141-.14.071-.422.213-.844.213h-.844l.352-1.062h.21c.212 0 .352 0 .423-.07.07-.071.14-.142.28-.354l.493-.849h1.758l-.282.637z" fill="#fff"></path>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M33.668 24.706s.492-.424 1.336-.637c.211-.07 1.406 0 1.406 0l.211-.636H34.02l-.352 1.273zm2.39.495h-2.53l-.14.495h2.6l.07-.495zm-3.303-2.9H34.3l-.21.778s.491-.424.843-.566c.351-.141 1.125-.212 1.125-.212h2.53l-.843 2.9c-.14.495-.281.85-.422.99-.07.142-.21.284-.422.425-.21.142-.422.212-.562.212h-3.234l-.703 2.264c-.07.212-.07.354-.07.425.07.07.14.141.21.141l1.055-.07-.351 1.06h-2.038c-.211 0-.352 0-.492-.07-.14-.071-.281-.213-.281-.354 0-.142.07-.354.14-.637l2.18-7.286z" fill="#fff"></path>
+    <path d="M37.324 26.97l-.14.707c-.07.213-.141.354-.282.495-.21.142-.351.283-.843.283h-.844v.779c0 .212.07.212.07.212.07.07.07.07.141.07h.281l.844-.07-.352 1.132h-.984c-.633 0-1.195 0-1.336-.142-.14-.07-.21-.212-.21-.424l.07-3.042h1.546v.637h.352c.14 0 .21 0 .281-.071.07 0 .07-.071.07-.142l.141-.495h1.195v.07zM15.671 11.619c-.07.283-1.054 4.74-1.054 4.74-.211.92-.352 1.556-.844 1.98-.281.283-.633.354-1.054.354-.633 0-.985-.354-1.055-.92v-.212l.211-1.202s1.055-4.104 1.195-4.67v-.07h-2.39c0 .07-.07.283-.07.283L9.555 16.5l-.07.424-.14 1.345c0 .353.07.707.21.92.492.848 1.828.99 2.601.99.984 0 1.898-.213 2.531-.566 1.055-.637 1.406-1.627 1.617-2.547l.14-.424 1.196-4.81v-.072c-1.406-.07-1.828-.07-1.969-.141zm5.835 8.489H19.75v-.07c.07-.284.14-.638.21-.92l.07-.425c.142-.707.282-1.486.352-1.698 0-.141.07-.495-.351-.495-.14 0-.352.07-.563.142a32.06 32.06 0 01-.421 1.839c-.211.99-.211 1.06-.281 1.556l-.07.07h-1.829v-.07l.422-1.698c.352-1.556.422-2.122.563-2.9l.07-.07c.844-.142.984-.142 1.898-.284l.07.07-.14.496c.14-.07.28-.212.422-.283a2.608 2.608 0 011.124-.283c.352 0 .774.07.984.566.141.425.07.92-.14 1.84l-.14.565c-.212 1.061-.282 1.274-.422 2.052h-.07zm2.883 0H22.49c.14-.425.14-.566.21-.708.07-.141.141-.282.211-.707.14-.566.211-.92.282-1.273.07-.354.07-.566.14-.92h.07c.422-.07.703-.07.985-.141.28-.071.562-.071.984-.213v.071c-.07.354-.14.707-.211.99-.07.354-.14.708-.211.99-.14.708-.21.991-.281 1.203-.07.213-.07.283-.07.637l-.211.07zm4.499-2.476c0 .212-.21.849-.422 1.132-.14.212-.351.354-.562.354-.07 0-.422 0-.422-.496 0-.283.07-.495.14-.778.211-.849.422-1.556.985-1.556.422 0 .422.495.281 1.344zm1.828.07c.21-1.06.07-1.626-.211-1.91-.352-.495-.984-.636-1.687-.636-.422 0-1.336.07-2.11.778-.562.495-.773 1.203-.913 1.84-.14.636-.352 1.839.773 2.334.351.141.844.212 1.125.212.843 0 1.617-.212 2.25-.849.492-.637.702-1.485.773-1.768zm17.224 2.477h-1.898l-.07-.071c.21-.849.421-1.627.632-2.476.281-1.061.281-1.556.351-2.122l.07-.071c.844-.142 1.055-.142 1.97-.354v.07c-.141.638-.352 1.345-.493 1.982-.352 1.415-.422 2.122-.562 2.83v.212z" fill="#fff"></path>
+    <path d="M46.674 17.703c-.07.141-.21.849-.422 1.131-.14.213-.492.354-.703.354-.07 0-.422 0-.422-.495 0-.283.07-.495.141-.778.211-.778.422-1.486.984-1.486.422-.07.563.425.422 1.274zm1.687.07c.282-1.06-.773-.07-.913-.424-.211-.566-.07-1.698-1.055-2.052-.352-.141-1.266.071-2.039.708-.562.495-.773 1.132-.984 1.84-.14.636-.351 1.838.773 2.263.352.141.633.212.984.212 1.125-.07 1.969-1.698 2.531-2.405.492-.566.633.212.703-.142zm-12.865 2.335H33.74v-.07c.07-.284.14-.638.21-.92l.07-.425c.142-.707.282-1.486.352-1.698 0-.141.07-.495-.351-.495-.14 0-.352.07-.492.142a32.06 32.06 0 01-.422 1.839c-.21.99-.21 1.06-.281 1.556l-.07.07h-1.828l-.07-.07.421-1.698c.352-1.556.422-2.122.563-2.9l.07-.07c.843-.142.984-.142 1.898-.284l.07.07-.14.496c.14-.07.28-.212.422-.283a2.855 2.855 0 011.124-.283c.352 0 .774.07.985.566.14.425.07.92-.141 1.84l-.14.495c-.211 1.06-.282 1.273-.352 2.051l-.14.07zm6.116-8.489H38.66c0 .141-.07.283-.07.283l-.563 2.546s-1.336 5.448-1.336 5.66h2.11c.07-.283.35-1.769.35-1.769l.282-1.131s.07-.142.14-.142h.141c1.125 0 2.46 0 3.445-.778.703-.495 1.195-1.274 1.406-2.193.07-.212.07-.495.07-.778 0-.354-.07-.708-.28-.99-.493-.708-1.547-.708-2.743-.708zm.774 2.688c-.14.566-.492 1.061-.985 1.273-.421.213-.843.213-1.335.213h-.352v-.142l.563-2.547v-.211h.21l1.196.07c.633.212.843.707.703 1.344zm12.514.849l-.07-.07c-.844.14-1.055.211-1.829.282l-.07.142v.07c-.562 1.415-.562 1.062-1.054 2.193v-.141l-.141-2.335-.07-.07c-.914.141-.914.212-1.758.283l-.07.07v.071c.07.566.07.425.21 1.273.07.425.141.85.141 1.274.07.707.14 1.061.211 2.122-.562.92-.703 1.273-1.265 2.122v.071h1.617l.14-.141c.492-1.132 4.007-7.216 4.007-7.216zm-29.738.637c.492-.354.492-.778.14-.99-.421-.213-1.124-.142-1.546.14-.492.354-.492.779-.14.991.35.212 1.054.142 1.546-.141z" fill="#fff"></path>
+    <path d="M50.892 22.3l-.703 1.203c-.21.425-.632.708-1.265.708h-1.125l.352-1.061h.21c.141 0 .211 0 .282-.071.07 0 .07-.07.14-.141l.422-.637h1.687z" fill="#fff"></path>
+  </symbol>
+</svg>
+
+<div class="mir-supreme">
+
+  <div class="mir-supreme-header">
+    <div class="mir-supreme-wrapp-content">
+      <div class="mir-supreme-breadcrumbs">
+        <a href="/">Главная</a>
+        <span> — </span>
+        <span>Премиальная карта Mir Supreme</span>
+      </div>
+    </div>
+
+    <div class="mir-supreme-wrapp-content mir-supreme-wrapp-content--header">
+      <div class="mir-supreme-header__card">
+        <img src="images/content/supreme-card 1.png" alt="MIR Supreme">
+      </div>
+      <div class="mir-supreme-header__info">
+        <img class="mir-supreme-header__logo" src="images/content/MIR Supreme logo.png" alt="MIR Supreme">
+        <p class="mir-supreme-header__desc">Карта премиального уровня для тех, кто открыт новым впечатлениям и хочет достигать большего</p>
+        <a href="#" class="mir-supreme-header__btn" >Оформить карту</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="mir-supreme-sub-header">
+    <div class="mir-supreme-wrapp-content">
+      <div class="mir-supreme-sub-header__title">С премиальной картой<br> Mir <span>Supreme</span> вы получаете</div>
+      <div class="mir-supreme-sub-header__bonuses">
+        <div class="mir-supreme-bonuses mir-supreme-bonuses--app">
+          <div class="mir-supreme-bonuses__icon">
+            <svg>
+              <use xlink:href="#app"></use>
+            </svg>
+          </div>
+          <div class="mir-supreme-bonuses__title">Доступ в бизнес-залы<br> с приложением DragonPass</div>
+          <div class="mir-supreme-bonuses__desc">
+            Приложение DragonPass позволяет посещать бизнес-залы без использования карты. Покажите QR-код сотруднику бизнес-зала и наслаждайтесь ожиданием полета в комфортной обстановке
+          </div>
+          <a href="#" class="mir-supreme-bonuses__link">Список доступных бизнес-залов</a>
+        </div>
+
+        <div class="mir-supreme-bonuses mir-supreme-bonuses--cashback">
+          <div class="mir-supreme-bonuses__icon">
+            <svg>
+              <use xlink:href="#cashback"></use>
+            </svg>
+          </div>
+          <div class="mir-supreme-bonuses__title">Повышенный кешбэк<br> в избранных категориях</div>
+          <div class="mir-supreme-bonuses__desc">
+            Получайте повышенный кешбэк от платёжной системы «Мир» в востребованных категориях покупок. Сегодня это супермаркеты, рестораныи такси
+          </div>
+          <a href="#" class="mir-supreme-bonuses__link">Правила акции</a>
+        </div>
+
+        <div class="mir-supreme-bonuses mir-supreme-bonuses--special">
+          <div class="mir-supreme-bonuses__icon">
+            <svg>
+              <use xlink:href="#special"></use>
+            </svg>
+          </div>
+          <div class="mir-supreme-bonuses__title">Специальные предложения<br> от наших партнёров</div>
+          <div class="mir-supreme-bonuses__desc">
+            Акции со значком «Выгоднее с Mir Supreme» и «Только для Mir Supreme» дают дополнительную выгоду для премиальных клиентов
+          </div>
+          <a href="#" class="mir-supreme-bonuses__link">Все акции</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="mir-supreme-slider-banks">
+    <div class="mir-supreme-wrapp-content">
+      <div class="mir-supreme-slider-banks__header">
+        <div class="mir-supreme-slider-banks__title">Банки, в которых вы можете<br> оформить премиальную карту</div>
+        <div class="mir-supreme-slider-banks-btns">
+          <button class="mir-supreme-slider-banks-btns__button mir-supreme-slider-banks-btns__button--left">
+            <svg>
+              <use xlink:href="#left-arrow-btn"></use>
+            </svg>
+          </button>
+          <button class="mir-supreme-slider-banks-btns__button mir-supreme-slider-banks-btns__button--right">
+            <svg>
+              <use xlink:href="#left-arrow-btn"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="mir-supreme-slider-banks__slider">
+        <div class="swiper-wrapper">
+          <div class="mir-supreme-slider-banks__item swiper-slide">
+            <a href="#"><img src="images/content/slider/sber.jpg" alt="sber"></a>
+          </div>
+          <div class="mir-supreme-slider-banks__item swiper-slide">
+            <a href="#"><img src="images/content/slider/alf.jpg" alt="alf"></a>
+          </div>
+          <div class="mir-supreme-slider-banks__item swiper-slide">
+            <a href="#"><img src="images/content/slider/gaz.jpg" alt="gaz"></a>
+          </div>
+          <div class="mir-supreme-slider-banks__item swiper-slide">
+            <a href="#"><img src="images/content/slider/prom.jpg" alt="prom"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="mir-supreme-cobaging">
+    <div class="mir-supreme-wrapp-content">
+      <div class="mir-supreme-cobaging__title">Кобейджинговая карта<br> MIR Supreme</div>
+      <div class="mir-supreme-cobaging__desc">Если вы много путешествуете, оформите кобейджинговую карту MIR Supreme и наслаждайтесь премиальным сервисом в России и за рубежом.</div>
+      <div class="mir-supreme-cobaging__desc mir-supreme-cobaging__spoiler" data-spoiler="cobaging">
+        Карта Mir Supreme-кобейдж – это карта, которая одновременно принадлежит к платёжной системе «Мир» и к одной из международных платёжных систем. На территории России вам доступны все предложения по карте «Мир», а за границей вы можете пользоваться этой же картой – она будет работать на базе второй платежной системы. Все преимущества карты MIR Supreme сохраняются – вы получаете доступ в бизнес-залы, повышенный кешбэк за транзакции, которые были осуществлены на территории России, а также специальные предложения от наших партнёров. Банки, выпускающие кобейдж Mir Supreme: Свербанк, ВТБ, Альфабанк, ПромсвязьБанк
+      </div>
+
+      <div class="mir-supreme-cobaging__btn">
+        <button type="button" class="mir-supreme-cobaging__spoiler-btn js-spoiler-btn" data-spoiler="cobaging">Развернуть</button>
+      </div>
+
+      <div class="mir-supreme-cobaging__list-wrapp">
+        <div class="mir-supreme-cobaging__list">
+          <svg class="mir-supreme-cobaging__icon mir-supreme-cobaging__icon--jcb">
+            <use xlink:href="#jcb"></use>
+          </svg>
+          <svg class="mir-supreme-cobaging__icon mir-supreme-cobaging__icon--maestro">
+            <use xlink:href="#maestro"></use>
+          </svg>
+          <svg class="mir-supreme-cobaging__icon mir-supreme-cobaging__icon--union">
+            <use xlink:href="#union"></use>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="mir-supreme-text-block mir-supreme-text-block--app">
+    <div class="mir-supreme-wrapp-content">
+      <div class="mir-supreme-text-block__img">
+        <img src="images/content/text/gragonpass.jpg" alt="gragonpass">
+      </div>
+      <div class="mir-supreme-text-block__content">
+        <div class="mir-supreme-text-block__title">Доступ в бизнес-залы с приложением DragonPass</div>
+        <div class="mir-supreme-text-block__desc">
+          Более 1 300 бизнес-залов по всему миру, специальные предложения от ресторанов на территории аэропортов, СПА, услуги трансфера и Meet&Greet
+        </div>
+        <hr>
+        <div class="mir-supreme-text-block__info">
+          <div class="mir-supreme-text-block__info-flex">
+            <div>
+              1.	Скачайте приложение DragonPass в <a href="#">App Store</a> или в <a href="#">Google Play</a>
+              <div class="mir-supreme-text-block__info-icons">
+                <a href="#">
+                  <svg>
+                    <use xlink:href="#apple"></use>
+                  </svg>
+                </a>
+                <a href="#">
+                  <svg>
+                    <use xlink:href="#google-play"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div>
+              2.	Обратитесь в свой банк, выдавший карту MIR Supreme за логином и паролем для входа в приложение DragonPass
+            </div>
+          </div>
+          <button type="button" class="mir-supreme-text-block__spoiler-btn js-spoiler-btn" data-spoiler="app-text-desc">Развернуть</button>
+        </div>
+      </div>
+    </div>
+    <div class="mir-supreme-wrapp-content">
+      <div class="mir-supreme-text-block__spoiler" data-spoiler="app-text-desc">
+        3.	Введите полученные от банка данные в приложение. Обратите внимание, что оплачивать членство вам не нужно
+        <br>
+        <br>
+        4.	Заполните данные в приложении. Они нужны нам для того, чтобы оказать сервис на должном уровне. Фамилию и имя необходимо указать, как в загранпаспорте, иначе вас могут не пустить в бизнес-зал. Адрес электронной почты может понадобиться, если вы забудете пароль или если что-то изменится у нас, например, список бизнес-залов, участвующих в программе.
+        <br>
+        <br>
+        5.	Выберите подходящий аэропорт и ознакомьтесь с предложениями:<br>
+        a.	Бизнес-залы – комфортная обстановка, закуски, wi-fi и многое другое. Будьте внимательны и ознакомьтесь с правилами до посещения бизнес-зала: у каждого зала свои условия.
+        b.	Рестораны – вы можете получить скидку или специальное предложение в ресторанах, участвующих в программе DragonPass.
+        c.	В некоторых аэропортах доступны СПА-процедуры.
+        d.	Сервисы трансфера и Meet&Greet доступны за отдельную плату.
+        <br>
+        <br>
+        6.	При необходимости вы можете купить дополнительные посещения. Привяжите свою карту «Мир» и оплатите дополнительные посещения бизнес-зала. Как это сделать?
+        <br>
+        <br>
+        <a href="#" class="mir-supreme-text-block__link">Больше ответов тут</a>
+      </div>
+    </div>
+  </div>
+  <div class="mir-supreme-text-block mir-supreme-text-block--gray mir-supreme-text-block--cashback">
+    <div class="mir-supreme-wrapp-content">
+      <div class="mir-supreme-text-block__img">
+        <img src="images/content/text/cashback.jpg" alt="cashback">
+      </div>
+      <div class="mir-supreme-text-block__content">
+        <div class="mir-supreme-text-block__title">Повышенный кешбэк в избранных категориях</div>
+        <div class="mir-supreme-text-block__desc">Любые супермаркеты, рестораны и такси <b>с кешбэком 10%</b></div>
+        <hr>
+        <div class="mir-supreme-text-block__info">
+          Вам нужно только убедиться, что супермаркет, ресторан или такси зарегистрирован с корректным МСС-кодом. Совершайте покупки с использованием карты MIR Supreme и в следующем месяце получайте кешбэк от платёжной системы «Мир». Максимальный кешбэк — 5 000 рублей в месяц.
+        </div>
+        <a href="#" class="mir-supreme-text-block__link">Подробные правила акции</a>
+      </div>
+    </div>
+  </div>
+  <div class="mir-supreme-text-block mir-supreme-text-block--partners">
+    <div class="mir-supreme-wrapp-content">
+      <div class="mir-supreme-text-block__img">
+        <img src="images/content/text/partners.jpg" alt="partners">
+      </div>
+      <div class="mir-supreme-text-block__content">
+        <div class="mir-supreme-text-block__title">Специальные предложения от наших партнёров</div>
+        <div class="mir-supreme-text-block__desc">
+          Ищите акции со значками «только с Mir Supreme» или «Выгоднее с Mir Supreme» и получайте максимальную выгоду от платёжной системы «Мир»
+        </div>
+        <hr>
+        <div class="mir-supreme-text-block__info">
+          Обязательно зарегистрируйте вашу карту MIR Supreme в <a href="#">Программе лояльности платёжной системы «Мир».</a>
+          Еще не зарегистрированы?
+          Программа лояльности Мир — это постоянный рост и сфера нашей активности представляет собой интересный эксперимент проверки направлений прогрессивного развития.
+        </div>
+        <a href="#" class="mir-supreme-text-block__link">Выбрать карту</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="mir-supreme-link-faq">
+    <div class="mir-supreme-wrapp-content">
+      <a href="#">Ответы на все вопросы о карте Mir Supereme</a>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
