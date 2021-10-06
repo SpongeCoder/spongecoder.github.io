@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="img/favicon.png">
+  <title>Евита</title>
+  <div class="wrapp">
+    <header class="big">
+      <section>
+        <nav>
+          <ul>
+            <li><a href="about.html">О нас</a></li>
+            <li><a href="products.html">Продукция</a></li>
+            <li><a href="advantages.html">Преимущества</a></li>
+            <li><a href="news.html">Новости</a></li>
+          </ul>
+        </nav>
+        <div class="logo"><a href="/"><img src="img/small-logo.png" alt="Евита"></a></div>
+        <div class="logo logo_big"><a href="/"><img src="img/big-logo.png" alt="Евита"></a></div>
+        <nav>
+          <ul>
+            <li><a href="reviews.html">Отзывы</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+          </ul>
+        </nav>
+        <div class="phone">
+          <p><span>+7 (4872)</span> 36-29-22</p><a href="#" class="feedback-phone">Обратный звонок</a>
+        </div>
+      </section>
+    </header>
+  </div>
+  <main class="main">
+    <div class="video-wrapp">
+      <video src="" autoplay preload loop muted type="video/mp4" id="video" class="video"></video>
+    </div>
+    <section>
+      <h1>Дистрибьюция слабоалкогольной и безалкогольной продукции</h1>
+      <div class="slider">
+        <nav>
+          <ul>
+            <li>
+              <p>Выбирайте:</p>
+            </li>
+            <li class="active"><a href="#">Пиво</a></li>
+            <li><a href="#">Пивосодержащие напитки</a></li>
+            <li><a href="#">Квас</a></li>
+            <li><a href="#">Вода</a></li>
+            <li><a href="#">Энергетические напитки</a></li>
+          </ul>
+        </nav>
+        <section>
+          <ul>
+            <li class="adult active"><img src="img/assets/banner1.jpg" alt="Пиво"></li>
+            <li class="adult"><img src="img/assets/banner2.jpg" alt="Пивосодержащие напитки"></li>
+            <li><img src="img/assets/banner3.jpg" alt="Квас"></li>
+            <li><img src="img/assets/banner4.jpg" alt="Вода"></li>
+            <li class="adult"><img src="img/assets/banner5.jpg" alt="Энергетические напитки"></li>
+          </ul><a href="#" class="link">Перейти в каталог</a>
+        </section>
+      </div>
+    </section>
+    <article class="blocks">
+      <h2>С нами легко и удобно работать!</h2>
+      <aside>
+        <div>раз</div>
+        <p>К Вам вызжает наш представитель, привозит необходимые документы, консультирует по всем вопросам.</p>
+      </aside>
+      <aside>
+        <div>два</div>
+        <p>Мы оборудуем Вашу торговую точку. Предоставляем холодильное оборудование, полки, рекламные материалы, способствующие увеличению продаж.</p>
+      </aside>
+      <aside>
+        <div>три</div>
+        <p>Мы получаем от Вас заказ и уже на следующий день проивозим необходимую продукцию.</p>
+      </aside>
+      <div class="clear"></div>
+    </article>
+    <article class="round">
+      <h3>Да это мы!</h3>
+      <aside>
+        <p>80</p>
+        <p>наименований продукции</p>
+      </aside>
+      <aside>
+        <p>1000</p>
+        <p>торговых точек</p>
+      </aside>
+      <aside>
+        <p>9</p>
+        <p>лет успешной работы</p>
+      </aside>
+      <div class="clear"></div>
+    </article>
+  </main>
+  <div class="request">
+    <h4>Оставьте заявку, мы свяжемся с Вами,<br> ответим на вопросы и согласуем время встречи</h4>
+    <button>заполнить заявку</button>
+  </div>
+  <footer>
+    <section>
+      <address>
+        <span>© 2015</span> «Эвита»<br>
+        Тула. Ханинский проезд д 23-а<br>
+        8 (4872) 39-29-03
+      </address>
+      <nav>
+        <ul>
+          <li><a href="#">О нас</a></li>
+          <li><a href="#">Продукция</a></li>
+          <li><a href="#">Новости</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">Преимущества</a></li>
+          <li><a href="#">Отзывы</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </nav><a href="http://odnavosmaya.ru/" class="author">Веб-студия<br> "Одна восьмая"</a>
+      <div class="clear"></div>
+    </section>
+  </footer>
+  <div class="feedback js-phone">
+    <h4>Обратный звонок</h4>
+    <form action="/" method="get">
+      <input type="hidden" name="feedback" value="phone">
+      <input type="text" placeholder="Имя" name="name">
+      <input type="tel" placeholder="Телефон" name="phone">
+      <input type="submit" value="Позвоните мне">
+    </form>
+  </div>
+  <div class="feedback js-request">
+    <h4>Оформить заявку</h4>
+    <form action="/" method="get">
+      <input type="hidden" name="feedback" value="request">
+      <input type="text" placeholder="Имя" name="name">
+      <input type="tel" placeholder="Телефон" name="phone">
+      <input type="email" placeholder="E-mail" name="email">
+      <textarea name="message" placeholder="Комментарий"></textarea>
+      <input type="submit" value="Отправить">
+    </form>
+  </div>
+  <script src="js/main.js"></script>
+  <script src="js/index-page.js"></script>
+</html>
