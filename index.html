@@ -5,6 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+        ul {
+            width: 50%;
+            margin: 20px auto;
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+        a {
+            color: #228be6;
+            text-transform: uppercase;
+            text-decoration: none;
+            position: relative;
+
+            padding-left: 20px;
+            transition: margin 0.3s;
+        }
+        a:hover {
+            text-decoration: underline;
+            margin-left: 20px;
+        }
+        a:hover::before {
+            opacity: 1;
+        }
+        a::before {
+            content: '>';
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+            top: 0;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+    </style>
 </head>
 <body>
     <ul>
