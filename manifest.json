@@ -7,9 +7,19 @@
     "orientation": "portrait",
     "icons": [
         {
-            "src": "./icon144.png",
+            "src": "./shoe144.png",
             "type": "image/png",
             "sizes": "144x144"
+        },
+        {
+            "src": "./shoe256.png",
+            "type": "image/png",
+            "sizes": "256x256"
+        },
+        {
+            "src": "./shoe.png",
+            "type": "image/png",
+            "sizes": "512x512"
         }
     ]
 }
