@@ -7,7 +7,7 @@
     "orientation": "portrait",
     "icons": [
         {
-            "src": "//6ef4e6a1-9d49-47ac-bfed-170f67a815cf.selcdn.net/static/img/global/pwa/logo_128x128.png",
+            "src": "icon.png",
             "type": "image/png",
             "sizes": "128x128"
         }
