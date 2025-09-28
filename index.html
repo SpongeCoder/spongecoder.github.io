@@ -431,6 +431,11 @@
     // if ("serviceWorker" in navigator) {
     //     navigator.serviceWorker.register("sw.js");
     // }
+    navigator.serviceWorker.getRegistrations().then(registrations => {
+        for (const registration of registrations) {
+            registration.unregister();
+        } 
+    });
 </script>
 <script src="scripts.js"></script>
 
