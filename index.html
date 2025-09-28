@@ -10,8 +10,7 @@
     <link rel="stylesheet" href="css/fontawesome.min.css">
     <link rel="stylesheet" href="bulma.min.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="icon.png" sizes="any" />
-    <script src="scripts.js"></script>
+    <link rel="icon" href="icon.png" sizes="any" />    
     <title>Кол-во обуви</title>
 </head>
 <body>
@@ -427,8 +426,12 @@
 
 </div>
 
-
-
+<!-- <script src="scripts.js"></script> -->
+<script>
+    if ("serviceWorker" in navigator) {
+        navigator.serviceWorker.register("./script.js");
+    }
+</script>
 
 </body>
 </html>
